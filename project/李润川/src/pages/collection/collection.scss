@@ -1,0 +1,43 @@
+page-collection {
+    // 标题
+    #title{
+        position:relative;
+        left: 23%;
+    }
+    // 香港行文本
+    #Hong-Kong{
+        padding-left: 3%;
+        font-size:1.8rem;
+    }
+    #pencil{
+        position: relative;
+        left:80%;
+        font-size:2rem;
+    }
+    // 时间行文本
+    #time1-txt{
+        margin: 0;
+        font-size:1.3rem;
+        color:#c6c6c6;
+
+    }
+    #time2-txt{
+        margin:0;
+        float:right;
+        font-size:1.3rem;
+        color:#c6c6c6;
+    }
+    //香港 图片
+    #Hong-Kong-pic{
+        border-radius: 5%;
+        width:97%;
+        height: 15rem;
+    }
+    //分割线
+    #line{
+        border-top:solid 0.5rem;
+        border-top-color: #f5f5f5;
+        position: relative;
+        top:2px;
+    }
+}
