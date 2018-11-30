@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { MyPage } from '../my/my';
 /**
  * Generated class for the AccountPage page.
  *
@@ -14,8 +14,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'account.html',
 })
 export class AccountPage {
-
+  myPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.myPage = MyPage;
+  }
+
+  pushMyPage(){
+    this.navCtrl.push(MyPage);
   }
 
   ionViewDidLoad() {

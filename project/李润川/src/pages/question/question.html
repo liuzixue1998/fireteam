@@ -5,14 +5,27 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>question</ion-title>
+  <ion-navbar color=lan block>
+    <ion-title>反馈</ion-title>
+    <ion-buttons end>
+      <button ion-button >关闭</button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <div id="box1">
+    <p id="txt1">请输入遇到的问题或者建议...</p>
+    <!-- 相机框 -->
+    <div id="box_1">
+      <ion-icon id="camera" name='md-camera'></ion-icon>
+    </div>
+  </div>
+  <!-- 分割线 -->
+  <div id="line"></div>
+  <!-- 按钮 -->
+  <button id="submit" ion-button block (click)='pushSettingPage()'>
+    提交
+  </button>
 </ion-content>
