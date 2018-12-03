@@ -1,0 +1,73 @@
+page-two {
+    .top{
+        position: absolute;
+    }
+   .top1{
+       position: relative;
+       margin-top: -18rem;
+       margin-left: 1rem;
+       font-size: 2.5rem;
+       color:#ffff;
+   }
+   .top2{
+       position: relative;
+       width: 20rem;
+       margin-left: 5rem;
+       margin-top: 3rem;
+   }
+   .bot{
+       margin-top: 22rem;
+   }
+   .bot1{
+       height: 2.5rem;
+       background-color: rgba(0,0,0,0.7);
+       
+       .ion{
+           float: left;
+           font-size: 2.3rem;
+           color: #ffff;
+           margin-top: 0.2rem;
+           margin-left: 0.2rem;
+       }
+        p{
+            float: left;
+            color: #ffff;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            padding-left: 1.5rem;
+            margin-top: 0.8rem;
+        }
+   }
+   .snow{
+       padding: 0;
+       img{
+           width: 100%;
+       }
+       li{
+        position: relative;
+        width: 40%;
+        float: left;
+        margin:0 1rem 0 0;
+       }
+   }
+   .bot2{
+    height: 2.5rem;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 14rem;
+    .ion{
+        float: left;
+        font-size: 2.3rem;
+        color: #ffff;
+        margin-top: 0.3rem;
+        margin-left: -12.5rem;
+    }
+     p{
+         float: left;
+         color: #ffff;
+         height: 0.8rem;
+         line-height: 0.8rem;
+         margin-left: -9.5rem;
+         margin-top: 1.2rem;
+     }
+}
+}
