@@ -1,0 +1,83 @@
+page-account {
+        // 头像框
+        #my-bg{
+            
+            background-image: url(../../assets/imgs/017.jpg);
+            background-size:cover;
+            background-position:center;
+            #bg-color{
+                background-color: rgba(136, 139, 139, 0.4);
+                width: 100%;
+                height: 18rem;
+            }
+        }
+        //头像
+        #pic-people{
+            position: relative;
+            top:4rem;
+            left:2rem;
+        }
+        #people{
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            position: relative;
+            top:10px;
+            background-color: #777576;
+        }
+        #icon-people{
+            font-size: 10rem;
+            color:#f4eef0;
+            position: relative;
+            top:-0.8rem;
+        }
+        //按钮
+        #button{
+            background-color: #009688;
+            opacity:0.75;
+        }
+       
+    
+        // 导航框
+        // 粉丝关注栏
+        #content{
+            background-color:#e9e9e9;
+        }
+        ion-col{
+            background-color: white;
+            margin: 2px 0 0 0;
+        }
+        ion-row{
+            margin: 2px 0 0 0;
+        }
+        .col1{
+            margin: 1px;
+        }
+    
+        // 菜单栏
+        // #col2{
+        //     margin-top: 1px;
+        // }
+        .col-menu{
+            background-color: white;
+            padding-left: 1rem;
+            // margin: 2px 0 0 0;
+        }
+        .icon-all{
+            font-size: 3rem;
+            color: #009688;
+            float: left;
+        }
+        .menu-text{
+            font-size: 2rem;
+            padding:0 0 0 1rem ;
+            margin: 0;
+            position: relative;
+            left:1rem;
+        }
+    
+        #col3{
+            height: 7.47rem;
+        }
+    
+}

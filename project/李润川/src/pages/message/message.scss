@@ -1,0 +1,79 @@
+page-message {
+    // 最外层结构
+    #content{
+        padding: 0 16px;
+    }
+    ion-navbar{
+        height: 1.8rem;
+    }
+    .scroll-content{
+        padding: 4px 16px 4px 16px;
+    }
+
+    // 每行设置
+    #row1{
+        width: 100%;
+    }
+    #col1{
+        width:100%;
+        padding: 0;
+    }
+   
+    // 评论
+    #bubble{
+        font-size: 3rem;
+        margin: 0;
+        padding: 1% 0 0 0%;
+    }
+    #comment-text{
+        font-size: 1.8rem;
+        padding:1% 0 4%  10%;
+        margin: 0;
+    }
+    #comment-text1{
+        font-size: 2rem;
+        color: #b8b8bdea;
+        position: relative;
+        right: -50%;
+        margin: 0;
+        padding: 1.2% 0 0 0;
+    }
+    // 点赞
+    #comment-text2{
+        font-size: 2rem;
+        color: #b8b8bdea;
+        position: relative;
+        right: -70%;
+        margin: 0;
+        padding: 1.2% 0 0 0;
+    }
+   #col2{
+       padding: 0;
+   }
+    // 消息框
+    #mes-touxiang{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: -2%;
+    }
+    #mes-text{
+        position: relative;
+        margin-top: 1.5%;
+        left: 4%;
+        h1{
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        h2{
+            margin: 0;
+            font-size: 1.3rem;
+            color: #8f8e94;
+        }
+        
+    }
+    #time{
+            position:relative;
+            left:50%;
+            color:#939298;
+    }
+}

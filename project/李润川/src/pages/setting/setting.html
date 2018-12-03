@@ -1,0 +1,65 @@
+<!--
+  Generated template for the SettingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=lan>
+    <ion-title id="title">设置</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <!-- 信息行1 -->
+  <ion-row class='row1'>
+    <ion-col>
+      <span class="txt1-span">编辑个人信息</span>
+      <span class="txt2-span">></span>
+    </ion-col>
+  </ion-row>
+  <!-- 信息行2 -->
+  <ion-row class='row1'>
+    <ion-col>
+      <span class="txt1-span">消息设置</span>
+      <span class="txt2-span">></span>
+    </ion-col>
+  </ion-row>
+  <!-- 信息行3 -->
+  <ion-row class='row1'>
+    <ion-col>
+      <span class="txt1-span">隐私设置</span>
+      <span class="txt2-span">></span>
+    </ion-col>
+  </ion-row>
+  <!-- 信息行4 -->
+  <ion-row class='row1'>
+    <ion-col>
+      <span class="txt1-span">清除缓存</span>
+      <span class="txt2-span">></span>
+    </ion-col>
+  </ion-row>
+  <!-- 信息行5 -->
+  <ion-row class='row1'>
+    <ion-col (click)='pushQuestionPage()'>
+      <span class="txt1-span">问题与反馈</span>
+      <span class="txt2-span">></span>
+    </ion-col>
+  </ion-row>
+  <!-- 信息行6 -->
+  <ion-row class='row1'>
+    <ion-col>
+      <span class="txt1-span">关于西遇</span>
+      <span class="txt2-span">></span>
+    </ion-col>
+  </ion-row>
+  <!-- 退出按钮 -->
+  <ion-row>
+    <ion-col>
+      <button ion-button block id="button"  (click)='pushAccountPage()'>退出登录</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
