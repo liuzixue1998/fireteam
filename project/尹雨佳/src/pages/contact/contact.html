@@ -2,11 +2,16 @@
   
 </ion-header>
 <ion-content>
-  <div class="slide-box">
-    <div class="slide-item"></div>
-    <div class="slide-item"></div>
-    <div class="slide-item"></div>
-    <div class="slide-item"></div>
-    <div class="slide-item"></div>
-</div>
+  <ion-list>
+    <ion-item class="item-input">      
+            <span class="item-input-wrapper" style="margin-right:16px">
+                    <i class="icon ion-ios-search placeholder-icon" ng-click="search()"></i>
+                    <input id="search" type="search" placeholder="请输出您想查找的驾驶员姓名" ng-model="searchCont.key">
+                    <i class="icon ion-close-circled placeholder-icon" style="vertical-align: middle;"
+                        on-tap="clearSearch()" ng-if="searchCont.key.length"></i>
+             </span>
+    </ion-item>
+    <ion-item class="" ng-repeat="item in itemArr2"></ion-item>
+</ion-list>
+！
 </ion-content>

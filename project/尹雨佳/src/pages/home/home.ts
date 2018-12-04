@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { OnePage } from '../one/one';
 import { TwoPage } from '../two/two';
 import { ThreePage } from '../three/three';
-import { Geolocation } from '@ionic-native/geolocation';
+
 import { SearchPage } from '../search/search';
 
 
@@ -19,7 +19,7 @@ export class HomePage {
   twoPage;
 
 
-  constructor(public navCtrl: NavController,private geolocation: Geolocation) {
+  constructor(public navCtrl: NavController) {
     this.onePage=OnePage;
     this.twoPage=TwoPage;
     this.threePage=ThreePage;
@@ -39,14 +39,5 @@ export class HomePage {
   }
  
  
-  public getGPS(){
-    this.geolocation.getCurrentPosition().then((resp) => {
-      // resp.coords.latitude
-      // resp.coords.longitude
-      console.log(resp.coords.latitude,resp.coords.longitude);
-    }).catch((error) => {
-      console.log('Error getting location', error);
-    });
-
-  }
+  
 }

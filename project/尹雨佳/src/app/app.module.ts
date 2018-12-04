@@ -2,7 +2,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { Geolocation } from '@ionic-native/geolocation';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -10,9 +9,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { OnePage } from '../pages/one/one';
 import { TwoPage } from '../pages/two/two';
 import { ThreePage } from '../pages/three/three';
+import { TieziPage } from '../pages/tiezi/tiezi';
 import { SearchPage } from '../pages/search/search';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     MyApp,
@@ -23,10 +24,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     OnePage,
     TwoPage,
     ThreePage,
-    SearchPage
+    SearchPage,
+    TieziPage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -39,12 +42,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     OnePage,
     TwoPage,
     ThreePage,
-    SearchPage
+    SearchPage,
+    TieziPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -1,9 +1,11 @@
 
 <ion-content>
   <div class="top">
-    <ion-icon ios="ios-pin" md="md-pin" class="ion" (click)="getGPS()"></ion-icon>
-    <ion-searchbar (ionInput)="getItems($event)" placeholder="搜你想要的" id="search" (click)="pushSearch()">
-    </ion-searchbar>
+    <ion-icon ios="ios-pin" md="md-pin" class="ion"></ion-icon>
+    <!--<ion-searchbar (ionInput)="getItems($event)" placeholder="搜你想要的" id="search" (click)="pushSearch()">
+    </ion-searchbar>-->
+    <ion-icon name="md-search" class="ion2"></ion-icon>
+    <input type="search" placeholder="搜你想去的" class="search"  (click)="pushSearch()">
   </div>
   <ul class="bot">
     <li (click)="push()">
