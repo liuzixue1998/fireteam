@@ -2,25 +2,53 @@ page-search {
     .top1{
         font-size: 3rem;
         color: rgba(0,0,0,0.7);
-        margin-top:1.2rem;
-        margin-left: 1rem;
+        margin-top:1rem;
+        margin-left: 0.5rem;
     }
-    .search{
-        width: 20rem;
-        
-    }
+  
     .top2{
-        margin-top:-4rem;
-        margin-left: 5rem;
+        margin-top:-3.5rem;
+        margin-left: 4rem;
         float: left;
         span{
-            margin-top:-3.5rem;
-            margin-left: 21rem;
+            margin-top:-1rem;
+            margin-left: 23rem;
             float: left;
             color: rgba(0,0,0,0.7);
+        }
+        ion-icon{
+            left: 2rem;
+            top:1rem;
+            position: relative;
+            color:rgba(0,0,0,0.8);
+        }
+        .search{
+            position: absolute;
+            width: 20rem;
+            margin-top: 0.4rem;
+            height: 2.5rem;
+            text-align: center;
+            -moz-border-radius: 11px;
+            -khtml-border-radius: 11px;
+            -webkit-border-radius: 11px;
+            border: none;
+            border-radius: 15px;
+            background-color: rgba(0,0,0,0.1);
         }
     }
     p{
         color:rgba(0,0,0,0.6);
+    }
+    ul{
+        li{
+            float:left;
+            width:4rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            
+            background-color: rgba(0,0,0,0.2);
+            margin: 0rem 1rem 1rem 1rem;
+        }
     }
 }

@@ -12,8 +12,27 @@ page-two {
    .top2{
        position: relative;
        width: 20rem;
-       margin-left: 5rem;
+       margin-left: 4rem;
        margin-top: 3rem;
+       .ion1{
+        position: relative;
+        color:black;
+        left: 2rem;
+        top:0.5rem;
+        font-size: 2.2rem;
+       }
+       .search{
+        position: absolute;
+        height: 3rem;
+        width: 20rem;
+        text-align: center;
+        -moz-border-radius: 11px;
+        -khtml-border-radius: 11px;
+        -webkit-border-radius: 11px;
+        border: none;
+        border-radius: 15px;
+        background-color: rgba(255,255,255,0.6);
+    }
    }
    .bot{
        margin-top: 21rem;
