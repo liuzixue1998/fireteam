@@ -2,15 +2,19 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import {TieziPage} from '../pages/tiezi/tiezi';
+import {OnePage} from '../pages/one/one';
+import {TwoPage} from '../pages/two/two';
+import {ThreePage} from '../pages/three/three';
+import{TieziPage}from '../pages/tiezi/tiezi';
+import {Tiezi1Page}  from '../pages/tiezi1/tiezi1'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,11 +22,15 @@ import {HttpClientModule} from '@angular/common/http';
     ContactPage,
     HomePage,
     TabsPage,
-    TieziPage
+    OnePage,
+    TwoPage,
+    ThreePage,
+    TieziPage,
+    Tiezi1Page
   ],
   imports: [
-    BrowserModule,
     HttpClientModule,
+    BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -32,7 +40,11 @@ import {HttpClientModule} from '@angular/common/http';
     ContactPage,
     HomePage,
     TabsPage,
-    TieziPage
+    OnePage,
+    TwoPage,
+    ThreePage,
+    TieziPage,
+    Tiezi1Page
   ],
   providers: [
     StatusBar,
@@ -40,6 +52,4 @@ import {HttpClientModule} from '@angular/common/http';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {
-  
-}
+export class AppModule {}
