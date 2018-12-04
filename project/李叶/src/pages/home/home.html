@@ -14,7 +14,7 @@
       <p>
         游一处风景，寻一处特色；见一处特色，悟一片心得。江南的绮丽.....
       </p>
-      <span ><img src="assets/imgs/touxiang.png" alt="" class="touxiang">哈哈 <span class="text">  <ion-icon name="ios-heart"  (click)="Zan1()"  id="heart1" ></ion-icon>622</span></span>
+      <span ><img src="assets/imgs/touxiang.png" alt="" class="touxiang"><span class="name">哈哈 </span><span class="text">  <ion-icon name="ios-heart"  (click)="Zan1()"  id="heart1" ></ion-icon>{{shuzi1}}</span></span>
       
     </li>
     <li>
@@ -24,7 +24,7 @@
         Day1:天津站-世纪钟-解放桥-金鸿广场-滨海步行街-恒隆广场
       </p>
       </div>
-      <span ><img src="assets/imgs/touxiang.png" alt="" class="touxiang">哈哈 <span class="text"> <ion-icon name="ios-heart"  (click)="Zan2()"  id="heart2" ></ion-icon>622</span></span>
+      <span ><img src="assets/imgs/touxiang.png" alt="" class="touxiang"><span class="name">哈哈</span> <span class="text"> <ion-icon name="ios-heart"  (click)="Zan2()"  id="heart2" ></ion-icon>{{shuzi2}}</span></span>
      
     </li>
     <li>
@@ -32,7 +32,7 @@
       <p>
         游一处风景，寻一处特色；见一处特色，悟一片心得。江南的绮丽.....
       </p>
-      <span ><img src="assets/imgs/touxiang.png" alt="" class="touxiang">哈哈 <span class="text"> <ion-icon name="ios-heart"  (click)="Zan3()"  id="heart3" ></ion-icon>622</span></span>
+      <span ><img src="assets/imgs/touxiang.png" alt="" class="touxiang"><span class="name">哈哈 </span><span class="text"> <ion-icon name="ios-heart"  (click)="Zan3()"  id="heart3" ></ion-icon>{{shuzi3}}</span></span>
      
     </li>
     <li>
@@ -40,21 +40,21 @@
       <p>
         游一处风景，寻一处特色；见一处特色，悟一片心得。江南的绮丽.....
       </p>
-      <span><img src="assets/imgs/touxiang.png" alt="" class="touxiang">哈哈 <span class="text"><ion-icon name="ios-heart"  (click)="Zan4()"  id="heart4" ></ion-icon><span id="text4">622</span></span></span>
+      <span><img src="assets/imgs/touxiang.png" alt="" class="touxiang"><span class="name">哈哈 </span> <span class="text"><ion-icon name="ios-heart"  (click)="Zan4()"  id="heart4" ></ion-icon>{{shuzi4}}</span></span>
     </li>
   </ul>
   </div>
   <div *ngSwitchCase="1">
     <span >
-    <img src="assets/imgs/touxiang.png" alt="" class="touxiang">哈哈 
+    <img src="assets/imgs/touxiang.png" alt="" class="touxiang"> 哈哈
     </span>
     <span class="rig"><ion-icon name="ios-menu-outline"></ion-icon>私信</span>
     <img src="assets/imgs/010.jpg" alt=""  class="img1">
     <p>Day1:天津站-世纪钟-解放桥-金鸿广场-滨海步行街-恒隆广场</p>
     <p> Day2:鼓楼-古文化街-意大利风情街</p>
     <span class="rig">
-      <ion-icon name="ios-heart-outline"></ion-icon>1002 
-      <ion-icon name="ios-star-outline"></ion-icon>220
+      <ion-icon ios="ios-heart" md="md-heart"(click)="dianzan()" id="xin"></ion-icon>{{zanshu}}
+      <ion-icon ios="ios-star" md="md-star" (click)="shoucang()" id="xing"></ion-icon>{{shoushu}}
       <ion-icon name="ios-text-outline"></ion-icon>45
     </span>
     <div class="pinglun">
