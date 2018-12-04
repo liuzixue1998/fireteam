@@ -6,12 +6,26 @@ page-home {
         .ion{
             margin-top:1.5rem;
         }
-        #search{
-            width: 25rem;
-            height: 0.01rem;
-            margin-left: 4.5rem;
-            margin-top: -1rem;
-            border-radius: 45%;
+        .ion2{
+            left: 3rem;
+            top:0.1rem;
+            position: relative;
+            color:rgba(0,0,0,0.8);
+            font-size: 2.5rem;
+        }
+        .search{
+            position: absolute;
+            width: 24rem;
+            margin-top: 1.2rem;
+            margin-left: 0.5rem;
+            height: 3rem;
+            text-align: center;
+            -moz-border-radius: 11px;
+            -khtml-border-radius: 11px;
+            -webkit-border-radius: 11px;
+            border: none;
+            border-radius: 15px;
+            background-color: rgba(0,0,0,0.1);
         }
     }
     .bot{

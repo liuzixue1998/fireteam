@@ -11,7 +11,8 @@ import {OnePage} from '../pages/one/one';
 import {TwoPage} from '../pages/two/two';
 import {ThreePage} from '../pages/three/three';
 import{TieziPage}from '../pages/tiezi/tiezi';
-import {Tiezi1Page}  from '../pages/tiezi1/tiezi1'
+import {Tiezi1Page}  from '../pages/tiezi1/tiezi1';
+import {SearchPage} from '../pages/search/search';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -26,7 +27,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TwoPage,
     ThreePage,
     TieziPage,
-    Tiezi1Page
+    Tiezi1Page,
+    SearchPage
+
   ],
   imports: [
     HttpClientModule,
@@ -44,7 +47,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TwoPage,
     ThreePage,
     TieziPage,
-    Tiezi1Page
+    Tiezi1Page,
+    SearchPage
   ],
   providers: [
     StatusBar,
