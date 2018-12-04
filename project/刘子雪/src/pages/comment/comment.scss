@@ -1,0 +1,103 @@
+page-comment {
+    // 最外层样式
+    #content{
+        padding: 0 ;
+    }
+    .scroll-content{
+        padding: 0;
+    }
+    #col1{
+        padding: 0;
+        margin: 0;
+    }
+    ion-navbar{
+        height: 1.8rem;
+    }
+   
+    #title{
+        position: relative;
+        left: 21%;
+    }
+
+    //头像行
+    #row1{
+        height: 6rem;
+    }
+    #touxiang-pic{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        position: relative;
+        left: 3%;
+        top:6%;
+    }
+    #text1{
+        position:relative;
+        left:6%;
+        top:2%;
+        h1{
+            font-size: 1.5rem;
+            margin: 10px 0 8px 0;
+        }
+        h2{
+            // margin: 0;
+            top:5%;
+            font-size:1.2rem;
+            color:#aaa6a6;
+        }
+    }
+    #text2{
+        position: relative;
+        left:58%;
+        #p1{
+            font-size:1.2rem;
+            color:#009688;
+        }
+    }
+
+    // 内容行
+    #div-p2{
+        position: relative;
+        left: 3%;
+        #p2{
+            margin: 0;
+        }
+    }
+    #pic2{
+        width: 40%;
+        height:10rem;
+    }
+    #col2{
+        padding: 0;
+        margin: 0;
+        
+    }
+    #row2{
+        background-color:#f7f7f7;
+    }
+    #text3{
+        position: relative;
+        margin: auto;
+        left: -8%;
+    }
+    #span1{
+        color: #009688;
+    }
+    #span3{
+        color: red;
+    }
+
+// 灰色分割线
+    #col3{
+        padding: 0 ;
+        position: relative;
+        top:0.8rem;
+        margin:0;
+    }
+    #row3{
+        background-color: #e5e5e5;
+        height:1rem;
+        width: 100%;
+    }
+
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AddPage } from '../add/add';
 
 /**
  * Generated class for the MatePage page.
@@ -14,9 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'mate.html',
 })
 export class MatePage {
-
+ 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  
+    
   }
+  returnn(){
+    this.navCtrl.pop();
+  }
+  
   
 }

@@ -1,12 +1,60 @@
-<ion-header>
+<ion-content >
+  <div>
+    <ion-icon name="md-arrow-round-back" (click)="returnn()"></ion-icon>
+    <div class="fabu">
+        <p>我要结伴</p>
+    </div>
+    <ion-icon name="md-arrow-dropright" class="iconn"></ion-icon>
+    <h4>发布</h4>
+  </div>
 
-  <ion-navbar>
-    <ion-title>mate</ion-title>
-  </ion-navbar>
+  <div class="ptp">
+    <img id="touxiang" src="../../assets/imgs/comment-touxiang.png" alt="">
+    <span id="name">哈哈</span>
 
-</ion-header>
+    <ion-item style="width: 25rem; height: 5rem;"> 
+      <ion-input type="text" placeholder="地点|西安"></ion-input>
+    </ion-item>
+    <ion-item style="width: 25rem;height: 5rem;">
+      <ion-input type="text" placeholder="时间|2018-11-20~2018-12-01"></ion-input>
+    </ion-item>
+    <ion-item style="width: 25rem;height: 5rem;">
+      <ion-input type="text" placeholder="人数|4人"></ion-input>
+    </ion-item>
+  </div>
 
+  <div class="sear">
+    <p>他们在找伴</p>
+    <ion-icon name="md-arrow-dropdown" class="iccon"></ion-icon>
+  </div>
 
-<ion-content padding>
+  <div class="jieban1">
+    <img id="touxiang" src="../../assets/imgs/comment-touxiang.png" alt="">
+    <span id="name">哈哈</span>
+    <span class="timee">1分钟前发布</span>
+    <p>
+      地点：<span style="color: #009688;">石家庄->西安</span> <br>
+      时间：2018-11-20出发<br>
+      有没有小伙伴跟我一起去西安啊
+    </p>
+    <div class="cu">
+        <ion-icon name="md-text"></ion-icon> <span>评论</span>
+        <ion-icon name="md-thumbs-up"></ion-icon> <span>点赞</span>
+    </div>
+  </div>
 
+  <div class="jieban2">
+      <img id="touxiang" src="../../assets/imgs/mes-touxiang.jpg" alt="">
+      <span id="name">嘻嘻</span>
+      <span class="timee">4分钟前发布</span>
+      <p>
+        地点：<span style="color: #009688;">石家庄->厦门</span> <br>
+        时间：2018-12-01出发<br>
+        有木有一起的，去厦门
+      </p>
+      <div class="cu">
+          <ion-icon name="md-text"></ion-icon> <span>评论</span>
+          <ion-icon name="md-thumbs-up"></ion-icon> <span>点赞</span>
+      </div>
+    </div>
 </ion-content>

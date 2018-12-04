@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContactPage } from '../contact/contact';
 import { SignupPage } from '../signup/signup';
+import { MyPage } from '../my/my';
+import { AccountPage } from '../account/account';
 
 /**
  * Generated class for the SigninPage page.
@@ -20,10 +22,13 @@ export class SigninPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 ret(){
-  this.navCtrl.push(ContactPage);
+  this.navCtrl.push(AccountPage);
 }
 signup(){
   this.navCtrl.push(SignupPage);
+}
+myy(){
+  this.navCtrl.push(MyPage);
 }
   ionViewDidLoad() {
     console.log('ionViewDidLoad SigninPage');
