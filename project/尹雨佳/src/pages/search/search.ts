@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SearchPage } from '../search/search';
 
 /**
- * Generated class for the TwoPage page.
+ * Generated class for the SearchPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,28 +10,21 @@ import { SearchPage } from '../search/search';
 
 @IonicPage()
 @Component({
-  selector: 'page-two',
-  templateUrl: 'two.html',
+  selector: 'page-search',
+  templateUrl: 'search.html',
 })
-export class TwoPage {
-  searchPage;
-  
+export class SearchPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.searchPage=SearchPage;
   }
 
   ionViewDidLoad() {
     
   }
-  pushTwo(){
-    this.navCtrl.pop();
-  }
   pushSearch(){
-    this.navCtrl.push(this.searchPage);
+    this.navCtrl.pop();
   }
   close(){
     this.navCtrl.pop();
   }
-
-  
 }

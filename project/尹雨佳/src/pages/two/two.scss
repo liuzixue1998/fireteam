@@ -16,7 +16,7 @@ page-two {
        margin-top: 3rem;
    }
    .bot{
-       margin-top: 22rem;
+       margin-top: 21rem;
    }
    .bot1{
        height: 2.5rem;
@@ -38,36 +38,39 @@ page-two {
             margin-top: 0.8rem;
         }
    }
-   .snow{
-       padding: 0;
-       img{
-           width: 100%;
-       }
-       li{
-        position: relative;
-        width: 40%;
-        float: left;
-        margin:0 1rem 0 0;
-       }
-   }
    .bot2{
     height: 2.5rem;
     background-color: rgba(0,0,0,0.7);
-    margin-top: 14rem;
-    .ion{
+    margin-top: 0rem;
+    .ion2{
         float: left;
         font-size: 2.3rem;
-        color: #ffff;
-        margin-top: 0.3rem;
-        margin-left: -12.5rem;
+        color:#ffff;
+        margin-top: 0.2rem;
+        margin-left: 1rem;
     }
      p{
          float: left;
-         color: #ffff;
+         color:#ffff;
          height: 0.8rem;
          line-height: 0.8rem;
-         margin-left: -9.5rem;
-         margin-top: 1.2rem;
+         margin-left: 1rem;
+         margin-top: 1rem;
      }
-}
+    }
+    .slide-box{
+        margin-top: 1rem;
+        margin-right: 1rem;
+        display: -webkit-box;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling:touch;
+    }
+    .slide-item{
+        padding-left: 1rem;
+        margin-right: 1rem;
+        width:16rem;
+        img{
+            width: 100%;
+        }
+    }
 }

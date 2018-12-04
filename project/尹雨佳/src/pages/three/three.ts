@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SearchPage } from '../search/search';
 
 /**
  * Generated class for the ThreePage page.
@@ -14,12 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'three.html',
 })
 export class ThreePage {
+  searchPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.searchPage=SearchPage;
   }
 
   ionViewDidLoad() {
     
+  }
+  pushSearch(){
+    this.navCtrl.push(this.searchPage);
   }
   close(){
     this.navCtrl.pop();
