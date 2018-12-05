@@ -1,0 +1,488 @@
+<ion-header>
+
+</ion-header>
+<ion-content>
+  <div class="div">
+    <div class="div1">西遇管理后台</div>
+    <div class="div2">用户管理</div>
+    <div class="div3"><ion-icon name="md-search"></ion-icon></div>
+    <div class="div4"><ion-icon name="md-notifications"></ion-icon></div>
+    <div class="div5">
+      <img src="assets/imgs/032.jpg" alt="">
+    </div>
+    <div class="div6">用户名</div>
+  </div>
+  
+  <div class="bot">
+    <div class="left">
+      <ul>
+        <li>首页<ion-icon name="ios-arrow-forward" class="ion1"></ion-icon></li>
+        <li>直播管理<ion-icon name="ios-arrow-forward" class="ion2"></ion-icon></li>
+        <li>用户管理<ion-icon name="ios-arrow-forward" class="ion3"></ion-icon></li>
+        <li>帖子管理<ion-icon name="ios-arrow-forward" class="ion4"></ion-icon></li>
+        <li>结伴信息管理<ion-icon name="ios-arrow-forward" class="ion5"></ion-icon></li>
+        <li>搜索历史<ion-icon name="ios-arrow-forward" class="ion6"></ion-icon></li>
+        <li>反馈管理<ion-icon name="ios-arrow-forward"class="ion7"></ion-icon></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div [ngSwitch]="isActive">
+        <div *ngSwitchCase="1">
+            <div class="row responsive-sm">
+                <div class="col col-10">用户头像</div>
+                <div class="col col-10">用户ID</div>
+                <div class="col col-10">用户名</div>
+                <div class="col col-10">用户密码</div>
+                <div class="col col-10">发帖数</div>
+                <div class="col col-10">关注</div>
+                <div class="col col-10">粉丝</div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                <div class="col col-10">001</div>
+                <div class="col col-10">啦啦啦</div>
+                <div class="col col-10">1234lala</div>
+                <div class="col col-10">7</div>
+                <div class="col col-10">20</div>
+                <div class="col col-10">100</div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                <div class="col col-10">002</div>
+                <div class="col col-10">哈哈</div>
+                <div class="col col-10">1234haha</div>
+                <div class="col col-10">15</div>
+                <div class="col col-10">105</div>
+                <div class="col col-10">416</div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                <div class="col col-10">003</div>
+                <div class="col col-10">嘻嘻</div>
+                <div class="col col-10">1234xixi</div>
+                <div class="col col-10">13</div>
+                <div class="col col-10">46</div>
+                <div class="col col-10">233</div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                <div class="col col-10">004</div>
+                <div class="col col-10">仙女本仙</div>
+                <div class="col col-10">xiannv222</div>
+                <div class="col col-10">100</div>
+                <div class="col col-10">208</div>
+                <div class="col col-10">66</div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                <div class="col col-10">005</div>
+                <div class="col col-10">怀柔甜兔</div>
+                <div class="col col-10">sweet1015</div>
+                <div class="col col-10">15</div>
+                <div class="col col-10">10</div>
+                <div class="col col-10">105</div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                <div class="col col-10">006</div>
+                <div class="col col-10">布朗熊</div>
+                <div class="col col-10">beer1111</div>
+                <div class="col col-10">8</div>
+                <div class="col col-10">14</div>
+                <div class="col col-10">36</div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                <div class="col col-10">007</div>
+                <div class="col col-10">可妮兔</div>
+                <div class="col col-10">rub3333</div>
+                <div class="col col-10">12</div>
+                <div class="col col-10">26</div>
+                <div class="col col-10">60</div>
+            </div>
+        </div>
+        <div *ngSwitchCase="2">
+                <div class="row responsive-sm">
+                    <div class="col col-10">用户头像</div>
+                    <div class="col col-10">用户ID</div>
+                    <div class="col col-10">用户名</div>
+                    <div class="col col-10">用户密码</div>
+                    <div class="col col-10">发帖数</div>
+                    <div class="col col-10">关注</div>
+                    <div class="col col-10">粉丝</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                    <div class="col col-10">008</div>
+                    <div class="col col-10">哦哦</div>
+                    <div class="col col-10">1234lala</div>
+                    <div class="col col-10">7</div>
+                    <div class="col col-10">20</div>
+                    <div class="col col-10">100</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                    <div class="col col-10">009</div>
+                    <div class="col col-10">芒果布丁</div>
+                    <div class="col col-10">1234haha</div>
+                    <div class="col col-10">15</div>
+                    <div class="col col-10">105</div>
+                    <div class="col col-10">416</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                    <div class="col col-10">010</div>
+                    <div class="col col-10">是挺亭啊</div>
+                    <div class="col col-10">1234xixi</div>
+                    <div class="col col-10">13</div>
+                    <div class="col col-10">46</div>
+                    <div class="col col-10">233</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                    <div class="col col-10">011</div>
+                    <div class="col col-10">咖啡不加糖</div>
+                    <div class="col col-10">xiannv222</div>
+                    <div class="col col-10">100</div>
+                    <div class="col col-10">208</div>
+                    <div class="col col-10">66</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                    <div class="col col-10">012</div>
+                    <div class="col col-10">是拢龙啊</div>
+                    <div class="col col-10">sweet1015</div>
+                    <div class="col col-10">15</div>
+                    <div class="col col-10">10</div>
+                    <div class="col col-10">105</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                    <div class="col col-10">013</div>
+                    <div class="col col-10">Yin's</div>
+                    <div class="col col-10">beer1111</div>
+                    <div class="col col-10">8</div>
+                    <div class="col col-10">14</div>
+                    <div class="col col-10">36</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                    <div class="col col-10">014</div>
+                    <div class="col col-10">在苏黎世</div>
+                    <div class="col col-10">rub3333</div>
+                    <div class="col col-10">12</div>
+                    <div class="col col-10">26</div>
+                    <div class="col col-10">60</div>
+                </div>
+        </div>
+        <div *ngSwitchCase="3">
+                <div class="row responsive-sm">
+                    <div class="col col-10">用户头像</div>
+                    <div class="col col-10">用户ID</div>
+                    <div class="col col-10">用户名</div>
+                    <div class="col col-10">用户密码</div>
+                    <div class="col col-10">发帖数</div>
+                    <div class="col col-10">关注</div>
+                    <div class="col col-10">粉丝</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                    <div class="col col-10">015</div>
+                    <div class="col col-10">啦啦啦</div>
+                    <div class="col col-10">1234lala</div>
+                    <div class="col col-10">7</div>
+                    <div class="col col-10">20</div>
+                    <div class="col col-10">100</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                    <div class="col col-10">016</div>
+                    <div class="col col-10">哈哈</div>
+                    <div class="col col-10">1234haha</div>
+                    <div class="col col-10">15</div>
+                    <div class="col col-10">105</div>
+                    <div class="col col-10">416</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                    <div class="col col-10">017</div>
+                    <div class="col col-10">嘻嘻</div>
+                    <div class="col col-10">1234xixi</div>
+                    <div class="col col-10">13</div>
+                    <div class="col col-10">46</div>
+                    <div class="col col-10">233</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                    <div class="col col-10">018</div>
+                    <div class="col col-10">仙女本仙</div>
+                    <div class="col col-10">xiannv222</div>
+                    <div class="col col-10">100</div>
+                    <div class="col col-10">208</div>
+                    <div class="col col-10">66</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                    <div class="col col-10">019</div>
+                    <div class="col col-10">怀柔甜兔</div>
+                    <div class="col col-10">sweet1015</div>
+                    <div class="col col-10">15</div>
+                    <div class="col col-10">10</div>
+                    <div class="col col-10">105</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                    <div class="col col-10">020</div>
+                    <div class="col col-10">布朗熊</div>
+                    <div class="col col-10">beer1111</div>
+                    <div class="col col-10">8</div>
+                    <div class="col col-10">14</div>
+                    <div class="col col-10">36</div>
+                </div>
+                <div class="row responsive-sm">
+                    <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                    <div class="col col-10">021</div>
+                    <div class="col col-10">可妮兔</div>
+                    <div class="col col-10">rub3333</div>
+                    <div class="col col-10">12</div>
+                    <div class="col col-10">26</div>
+                    <div class="col col-10">60</div>
+                </div>
+        </div>
+        <div *ngSwitchCase="4">
+                    <div class="row responsive-sm">
+                        <div class="col col-10">用户头像</div>
+                        <div class="col col-10">用户ID</div>
+                        <div class="col col-10">用户名</div>
+                        <div class="col col-10">用户密码</div>
+                        <div class="col col-10">发帖数</div>
+                        <div class="col col-10">关注</div>
+                        <div class="col col-10">粉丝</div>
+                    </div>
+                    <div class="row responsive-sm">
+                        <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                        <div class="col col-10">022</div>
+                        <div class="col col-10">啦啦啦</div>
+                        <div class="col col-10">1234lala</div>
+                        <div class="col col-10">7</div>
+                        <div class="col col-10">20</div>
+                        <div class="col col-10">100</div>
+                    </div>
+                    <div class="row responsive-sm">
+                        <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                        <div class="col col-10">023</div>
+                        <div class="col col-10">哈哈</div>
+                        <div class="col col-10">1234haha</div>
+                        <div class="col col-10">15</div>
+                        <div class="col col-10">105</div>
+                        <div class="col col-10">416</div>
+                    </div>
+                    <div class="row responsive-sm">
+                        <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                        <div class="col col-10">024</div>
+                        <div class="col col-10">嘻嘻</div>
+                        <div class="col col-10">1234xixi</div>
+                        <div class="col col-10">13</div>
+                        <div class="col col-10">46</div>
+                        <div class="col col-10">233</div>
+                    </div>
+                    <div class="row responsive-sm">
+                        <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                        <div class="col col-10">025</div>
+                        <div class="col col-10">仙女本仙</div>
+                        <div class="col col-10">xiannv222</div>
+                        <div class="col col-10">100</div>
+                        <div class="col col-10">208</div>
+                        <div class="col col-10">66</div>
+                    </div>
+                    <div class="row responsive-sm">
+                        <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                        <div class="col col-10">026</div>
+                        <div class="col col-10">怀柔甜兔</div>
+                        <div class="col col-10">sweet1015</div>
+                        <div class="col col-10">15</div>
+                        <div class="col col-10">10</div>
+                        <div class="col col-10">105</div>
+                    </div>
+                    <div class="row responsive-sm">
+                        <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                        <div class="col col-10">027</div>
+                        <div class="col col-10">布朗熊</div>
+                        <div class="col col-10">beer1111</div>
+                        <div class="col col-10">8</div>
+                        <div class="col col-10">14</div>
+                        <div class="col col-10">36</div>
+                    </div>
+                    <div class="row responsive-sm">
+                        <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                        <div class="col col-10">028</div>
+                        <div class="col col-10">可妮兔</div>
+                        <div class="col col-10">rub3333</div>
+                        <div class="col col-10">12</div>
+                        <div class="col col-10">26</div>
+                        <div class="col col-10">60</div>
+                    </div>
+        </div>
+         <div *ngSwitchCase="5">
+                        <div class="row responsive-sm">
+                            <div class="col col-10">用户头像</div>
+                            <div class="col col-10">用户ID</div>
+                            <div class="col col-10">用户名</div>
+                            <div class="col col-10">用户密码</div>
+                            <div class="col col-10">发帖数</div>
+                            <div class="col col-10">关注</div>
+                            <div class="col col-10">粉丝</div>
+                        </div>
+                        <div class="row responsive-sm">
+                            <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                            <div class="col col-10">001</div>
+                            <div class="col col-10">啦啦啦</div>
+                            <div class="col col-10">1234lala</div>
+                            <div class="col col-10">7</div>
+                            <div class="col col-10">20</div>
+                            <div class="col col-10">100</div>
+                        </div>
+                        <div class="row responsive-sm">
+                            <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                            <div class="col col-10">002</div>
+                            <div class="col col-10">哈哈</div>
+                            <div class="col col-10">1234haha</div>
+                            <div class="col col-10">15</div>
+                            <div class="col col-10">105</div>
+                            <div class="col col-10">416</div>
+                        </div>
+                        <div class="row responsive-sm">
+                            <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                            <div class="col col-10">003</div>
+                            <div class="col col-10">嘻嘻</div>
+                            <div class="col col-10">1234xixi</div>
+                            <div class="col col-10">13</div>
+                            <div class="col col-10">46</div>
+                            <div class="col col-10">233</div>
+                        </div>
+                        <div class="row responsive-sm">
+                            <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                            <div class="col col-10">004</div>
+                            <div class="col col-10">仙女本仙</div>
+                            <div class="col col-10">xiannv222</div>
+                            <div class="col col-10">100</div>
+                            <div class="col col-10">208</div>
+                            <div class="col col-10">66</div>
+                        </div>
+                        <div class="row responsive-sm">
+                            <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                            <div class="col col-10">005</div>
+                            <div class="col col-10">怀柔甜兔</div>
+                            <div class="col col-10">sweet1015</div>
+                            <div class="col col-10">15</div>
+                            <div class="col col-10">10</div>
+                            <div class="col col-10">105</div>
+                        </div>
+                        <div class="row responsive-sm">
+                            <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                            <div class="col col-10">006</div>
+                            <div class="col col-10">布朗熊</div>
+                            <div class="col col-10">beer1111</div>
+                            <div class="col col-10">8</div>
+                            <div class="col col-10">14</div>
+                            <div class="col col-10">36</div>
+                        </div>
+                        <div class="row responsive-sm">
+                            <div class="col col-10"><img src="assets/imgs/01.jpg" alt=""></div>
+                            <div class="col col-10">007</div>
+                            <div class="col col-10">可妮兔</div>
+                            <div class="col col-10">rub3333</div>
+                            <div class="col col-10">12</div>
+                            <div class="col col-10">26</div>
+                            <div class="col col-10">60</div>
+                        </div>
+        </div>
+        <div *ngSwitchCase="6">
+                            <div class="row responsive-sm">
+                                <div class="col col-10">用户头像</div>
+                                <div class="col col-10">用户ID</div>
+                                <div class="col col-10">用户名</div>
+                                <div class="col col-10">用户密码</div>
+                                <div class="col col-10">发帖数</div>
+                                <div class="col col-10">关注</div>
+                                <div class="col col-10">粉丝</div>
+                            </div>
+                            <div class="row responsive-sm">
+                                <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                                <div class="col col-10">001</div>
+                                <div class="col col-10">啦啦啦</div>
+                                <div class="col col-10">1234lala</div>
+                                <div class="col col-10">7</div>
+                                <div class="col col-10">20</div>
+                                <div class="col col-10">100</div>
+                            </div>
+                            <div class="row responsive-sm">
+                                <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                                <div class="col col-10">002</div>
+                                <div class="col col-10">哈哈</div>
+                                <div class="col col-10">1234haha</div>
+                                <div class="col col-10">15</div>
+                                <div class="col col-10">105</div>
+                                <div class="col col-10">416</div>
+                            </div>
+                            <div class="row responsive-sm">
+                                <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                                <div class="col col-10">003</div>
+                                <div class="col col-10">嘻嘻</div>
+                                <div class="col col-10">1234xixi</div>
+                                <div class="col col-10">13</div>
+                                <div class="col col-10">46</div>
+                                <div class="col col-10">233</div>
+                            </div>
+                            <div class="row responsive-sm">
+                                <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                                <div class="col col-10">004</div>
+                                <div class="col col-10">仙女本仙</div>
+                                <div class="col col-10">xiannv222</div>
+                                <div class="col col-10">100</div>
+                                <div class="col col-10">208</div>
+                                <div class="col col-10">66</div>
+                            </div>
+                            <div class="row responsive-sm">
+                                <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                                <div class="col col-10">005</div>
+                                <div class="col col-10">怀柔甜兔</div>
+                                <div class="col col-10">sweet1015</div>
+                                <div class="col col-10">15</div>
+                                <div class="col col-10">10</div>
+                                <div class="col col-10">105</div>
+                            </div>
+                            <div class="row responsive-sm">
+                                <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                                <div class="col col-10">006</div>
+                                <div class="col col-10">布朗熊</div>
+                                <div class="col col-10">beer1111</div>
+                                <div class="col col-10">8</div>
+                                <div class="col col-10">14</div>
+                                <div class="col col-10">36</div>
+                            </div>
+                            <div class="row responsive-sm">
+                                <div class="col col-10"><img src="assets/imgs/032.jpg" alt=""></div>
+                                <div class="col col-10">007</div>
+                                <div class="col col-10">可妮兔</div>
+                                <div class="col col-10">rub3333</div>
+                                <div class="col col-10">12</div>
+                                <div class="col col-10">26</div>
+                                <div class="col col-10">60</div>
+                            </div>
+        </div>
+    </div>
+        <ul class="navList">
+            <li>上一页</li>
+            <li (click)="isClick(1)" [class.first]="isActive==1">1</li>
+            <li (click)="isClick(2)" [class.first]="isActive==2">2</li>
+            <li (click)="isClick(3)" [class.first]="isActive==3">3</li>
+            <li (click)="isClick(4)" [class.first]="isActive==4">4</li>
+            <li (click)="isClick(5)" [class.first]="isActive==5">5</li>
+            <li (click)="isClick(6)" [class.first]="isActive==6">6</li>
+            <li (click)="isClick(7)">下一页</li>
+        </ul>
+    </div>
+</div>
+</ion-content>
+
