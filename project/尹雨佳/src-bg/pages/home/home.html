@@ -21,7 +21,7 @@
         <li>用户管理<ion-icon name="ios-arrow-forward" class="ion3"></ion-icon></li>
         <li>帖子管理<ion-icon name="ios-arrow-forward" class="ion4"></ion-icon></li>
         <li>结伴信息管理<ion-icon name="ios-arrow-forward" class="ion5"></ion-icon></li>
-        <li>搜索历史<ion-icon name="ios-arrow-forward" class="ion6"></ion-icon></li>
+        <li (click)="push()">搜索历史<ion-icon name="ios-arrow-forward" class="ion6"></ion-icon></li>
         <li>反馈管理<ion-icon name="ios-arrow-forward"class="ion7"></ion-icon></li>
       </ul>
     </div>
@@ -471,7 +471,6 @@
                                 <div class="col col-10">60</div>
                             </div>
         </div>
-    </div>
         <ul class="navList">
             <li>上一页</li>
             <li (click)="isClick(1)" [class.first]="isActive==1">1</li>
@@ -480,8 +479,9 @@
             <li (click)="isClick(4)" [class.first]="isActive==4">4</li>
             <li (click)="isClick(5)" [class.first]="isActive==5">5</li>
             <li (click)="isClick(6)" [class.first]="isActive==6">6</li>
-            <li (click)="isClick(7)">下一页</li>
+            <li>下一页</li>
         </ul>
+      </div>
     </div>
 </div>
 </ion-content>
