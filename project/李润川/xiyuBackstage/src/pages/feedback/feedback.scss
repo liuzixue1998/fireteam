@@ -1,0 +1,187 @@
+page-feedback {
+        *{
+            list-style: none;
+        }
+        .div{
+            width:100rem;
+            height: 5rem;
+            line-height: 5rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: 0 auto;
+        }
+        .div1{
+            float:left;
+            margin-left: 4rem;
+            margin-right: 10rem;
+            color: #ffff;
+        }
+        .div2{
+            float: left;
+            color:#ffff;
+        }
+        .div3{
+            float: left;
+            margin-left: 50rem;
+            color:#ffff;
+        }
+        .div4{
+            float: left;
+            margin-left: 2rem;
+            color:#ffff;
+        }
+        .div5{
+            float: left;
+            position: absolute;
+            margin-left: 84rem;
+            img{
+                width:10%;
+                margin-top:0.7rem;
+                border-radius: 50%;
+            }
+        }
+        .div6{
+            float: left;
+            color:#ffff;
+            margin-left: 6rem;
+        }
+        .bot{
+            width:100rem;
+            height: 50rem;
+            margin:0 auto;
+        }
+        .left{
+            width:20rem;
+            height: 50rem;
+            margin-top: -1.15rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            ul li{
+                list-style: none;
+                color: #ffff;
+                margin-left: -2rem;
+                .ion1{
+                    margin-left: 12rem;
+                }
+                .ion2{
+                    margin-left: 9.6rem;
+                }
+                .ion3{
+                    margin-left: 9.6rem;
+                }
+                .ion4{
+                    margin-left: 9.6rem;
+                }
+                .ion5{
+                    margin-left: 7.3rem;
+                }
+                .ion6{
+                    margin-left: 9.6rem;
+                }
+                .ion7{
+                    margin-left: 9.6rem;
+                }
+            }
+        }
+        // 内容
+        .right{
+            position: relative;
+            left:20%;
+            top: -100%;
+            // 标题
+            #title{
+                margin: 0%;
+                padding: 0;
+                display: inline-block;
+                #status{
+                    padding: 1rem 3rem 1rem 13rem;
+                    background-color: #fafafa;
+                    margin: 0%;
+                    float: left;
+                    border-bottom: solid 1px;
+                    border-bottom-color: #e8e8e8;
+                }
+                .li1{
+                    background-color: #fafafa;
+                    margin: 0%;
+                    padding: 1rem 5.9rem;
+                    float: left;
+                    border-bottom: solid 1px;
+                    border-bottom-color: #e8e8e8;
+                   
+                }
+            }
+            // 表格内容
+            .text1{
+                margin: 0%;
+                padding: 0;
+                display: inline-block;
+                position: relative;
+                top: 2%;
+                .txt1{
+                    padding: 1rem 3.88rem 1rem 5.8rem;
+                }
+                .txt2{
+                    padding:  1.1rem 3rem 1.1rem 7rem;
+                }
+                .txt3{
+                    padding:  1rem 2rem 1rem 2rem;
+                }
+                .txt4{
+                    padding:  1rem 3rem 1rem 3rem;
+                }
+                .txt5{
+                    padding:  1.1rem 3rem 1.1rem 5rem;
+                }
+                .txt6{
+                    padding:  1rem 3rem 1rem 5.5rem;
+                    color:#1890ff;
+                }
+
+                li{
+                    margin: 0%;
+                    float: left;
+                    border-bottom: solid 1px;
+                    border-bottom-color: #e8e8e8;
+                }
+                .txt3-3{
+                    padding:  1rem 2rem 1rem 0.5rem;
+                }
+                .txt4-4{
+                    padding: 1rem 2rem 1rem 2rem;
+                    display: inline-block;
+                }
+                .txt5-5{
+                    padding: 1.1rem 2rem 1.1rem 5.5rem;
+                }
+                .txt6-6{
+                    padding: 1rem 2rem 1rem 6.5rem;
+                    color:#1890ff;
+                }
+            }
+            span{
+                margin: 0%;
+                padding: 0%;
+               
+            }
+            
+        }
+        
+        // 分页
+        .pages{
+            position: relative;
+            top:-35rem;
+            left: 30rem;
+            li{
+                float: left;
+                margin-right: 3rem;
+            }
+            .numb{
+                background-color: #4d555d; 
+                color: white; 
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+        
+}
