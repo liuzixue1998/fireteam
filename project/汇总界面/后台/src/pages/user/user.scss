@@ -1,0 +1,114 @@
+page-user {
+    .div{
+        width:90rem;
+        height: 5rem;
+        line-height: 5rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 0 auto;
+    }
+    .div1{
+        float:left;
+        margin-left: 4rem;
+        margin-right: 10rem;
+        color: #ffff;
+    }
+    .div2{
+        float: left;
+        color:#ffff;
+    }
+    .div3{
+        float: left;
+        margin-left: 50rem;
+        color:#ffff;
+    }
+    .div4{
+        float: left;
+        margin-left: 2rem;
+        color:#ffff;
+    }
+    .div5{
+        float: left;
+        position: absolute;
+        margin-left: 83rem;
+        img{
+            width:6%;
+            margin-top:1.2rem;
+            border-radius: 50%;
+        }
+    }
+    .div6{
+        float: left;
+        color:#ffff;
+        margin-left: 6rem;
+    }
+    .bot{
+        width:90rem;
+        height: 50rem;
+        margin:0 auto;
+    }
+    .left{
+        width:18rem;
+        height: 50rem;
+        float: left;
+        margin-top: 0rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        ul li{
+            list-style: none;
+            color: #ffff;
+            margin-left: -2rem;
+            .ion1{
+                margin-left: 12rem;
+            }
+            .ion2{
+                margin-left: 9.6rem;
+            }
+            .ion3{
+                margin-left: 9.6rem;
+            }
+            .ion4{
+                margin-left: 9.6rem;
+            }
+            .ion5{
+                margin-left: 7.3rem;
+            }
+            .ion6{
+                margin-left: 9.6rem;
+            }
+            .ion7{
+                margin-left: 9.6rem;
+            }
+        }
+    }
+    .right{
+        float: left;
+        width:72rem;
+        height: 50rem;
+        img{
+            border-radius: 50%;
+            width:45%;
+        }
+        .row{
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+        }
+        .navList{
+            margin: 3rem 1rem 0 22%;
+            height: 2rem;
+            line-height: 2rem;
+            .first{
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+                background-color:rgba(0, 0, 0, 0.6);
+            }
+            li{
+                height: 2rem;
+                width: 2rem;
+                text-align: center;
+                float: left;
+                width: 8%;
+            }
+        }
+    }
+}

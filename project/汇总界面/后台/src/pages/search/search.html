@@ -1,0 +1,176 @@
+<!--
+  Generated template for the SearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content>
+  <div class="div">
+      <div class="div1">西遇管理后台</div>
+      <div class="div2">搜索历史</div>
+      <div class="div3"><ion-icon name="md-search"></ion-icon></div>
+      <div class="div4"><ion-icon name="md-notifications"></ion-icon></div>
+      <div class="div5">
+        <img src="assets/imgs/032.jpg" alt="">
+      </div>
+      <div class="div6">用户名</div>
+    </div>
+
+    <div class="bot">
+        <div class="left">
+          <ul>
+            <li (click)="gohome()">首页<ion-icon name="ios-arrow-forward" class="ion1"></ion-icon></li>
+            <li (click)="govideo()">视频管理<ion-icon name="ios-arrow-forward" class="ion2"></ion-icon></li>
+            <li (click)="gouser()">用户管理<ion-icon name="ios-arrow-forward" class="ion3"></ion-icon></li>
+            <li (click)="gotxtmg()">帖子管理<ion-icon name="ios-arrow-forward" class="ion4"></ion-icon></li>
+            <li (click)="gotogether()">结伴信息管理<ion-icon name="ios-arrow-forward" class="ion5"></ion-icon></li>
+            <li>搜索历史<ion-icon name="ios-arrow-forward" class="ion6"></ion-icon></li>
+            <li (click)="gofeedback()">反馈管理<ion-icon name="ios-arrow-forward"class="ion7"></ion-icon></li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="right1"><p>历史管理</p><HR width="100%" SIZE=20></div>
+          <div class="right2">
+            <ul>
+              <li>
+                  <ion-list>
+                      <ion-item>
+                        <ion-label color="primary">用户名</ion-label>
+                        <ion-input placeholder="请输入用户名"></ion-input>
+                      </ion-item>
+                  </ion-list>  
+              </li>
+              <li>
+                  <ion-list>
+                      <ion-item>
+                        <ion-label color="primary">历史网址</ion-label>
+                        <ion-input placeholder="请输入"></ion-input>
+                      </ion-item>
+                  </ion-list>  
+              </li>
+              <li>
+                <ion-list >
+                    <ion-item>
+                      <ion-label stacked>帖子类型</ion-label>
+                      <ion-select [(ngModel)]="typeTxt" (ngModelChange)="switchType()"  interface="popover" style="height:5rem;" placeholder="请选择帖子类型">
+                        <ion-option value="0">心得</ion-option>
+                        <ion-option>攻略</ion-option>
+                      </ion-select>
+                    </ion-item>
+                </ion-list>
+              </li>
+            </ul>
+          </div>
+          <div class="right3">
+            <ul>
+              <li>
+                  <ion-list>
+                      <ion-item>
+                        <ion-label color="primary">帖子作者</ion-label>
+                        <ion-input placeholder="请输入"></ion-input>
+                      </ion-item>
+                  </ion-list>  
+              </li>
+              <li>
+                <ion-item>
+                    <ion-label>发布时间</ion-label>
+                    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate">
+                    </ion-datetime>
+                </ion-item>
+              </li>
+              <li>
+                  <ion-list >
+                      <ion-item>
+                        <ion-label stacked>浏览时间</ion-label>
+                        <ion-select [(ngModel)]="typeTxt" (ngModelChange)="switchType()"  interface="popover" style="height:5rem;" placeholder="浏览时间">
+                          <ion-option value="0">10分钟</ion-option>
+                          <ion-option>20分钟</ion-option>
+                          <ion-option>30分钟</ion-option>
+                          <ion-option>40分钟</ion-option>
+                        </ion-select>
+                      </ion-item>
+                  </ion-list>
+              </li>
+            </ul>
+          </div>
+          <div class="right4">
+            <div class="right4-l">
+              <img src="assets/imgs/01.jpg" alt="" class="touxiang">
+              <p  id="wenzi">啦啦啦</p>
+              <ul class="liulan">
+                <li>
+                  <img src="assets/imgs/032.jpg" alt="">
+                </li>
+                <li>
+                    <img src="assets/imgs/01.jpg" alt="">
+                </li>
+                <li>
+                    <img src="assets/imgs/032.jpg" alt="">
+                </li>
+                <li>
+                    <img src="assets/imgs/01.jpg" alt="">
+                </li>
+              </ul>
+              <div class="guode"><p>浏览过的</p>
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+              </div>
+            </div>
+            <div class="right4-r">
+
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <ul id="title">
+            <li class="li1">搜索历史</li>
+            <li class="li1">描述</li>
+            <li id="status">帖子浏览数</li>
+            <li class="li1">是否收藏</li>
+            <li class="li1">更新时间</li>
+            <li class="li2">操作</li>
+          </ul>
+          <ul class="text1">
+            <li class="txt1">哈哈</li>
+            <li class="txt2">这是一段描述</li>
+            <li class="txt3">357万</li>
+            <li class="txt4">否</li>
+            <li class="txt5">2017-10-31 23:12:00</li>
+            <li class="txt6">配置&nbsp;&nbsp;订阅警报</li>
+          </ul>
+          <ul class="text2">
+            <li class="txt1">哈哈</li>
+            <li class="txt2">这是一段描述</li>
+            <li class="txt3">357万</li>
+            <li class="txt4">否</li>
+            <li class="txt5">2017-10-31 23:12:00</li>
+            <li class="txt6">配置&nbsp;&nbsp;订阅警报</li>
+          </ul>
+          <ul class="text3">
+            <li class="txt1">哈哈</li>
+            <li class="txt2">这是一段描述</li>
+            <li class="txt3">357万</li>
+            <li class="txt4">否</li>
+            <li class="txt5">2017-10-31 23:12:00</li>
+            <li class="txt6">配置&nbsp;&nbsp;订阅警报</li>
+          </ul>
+          <ul class="text4">
+            <li class="txt1">哈哈</li>
+            <li class="txt2">这是一段描述</li>
+            <li class="txt3">357万</li>
+            <li class="txt4">否</li>
+            <li class="txt5">2017-10-31 23:12:00</li>
+            <li class="txt6">配置&nbsp;&nbsp;订阅警报</li>
+          </ul>
+          <ul class="text5">
+            <li class="txt1">哈哈</li>
+            <li class="txt2">这是一段描述</li>
+            <li class="txt3">357万</li>
+            <li class="txt4">否</li>
+            <li class="txt5">2017-10-31 23:12:00</li>
+            <li class="txt6">配置&nbsp;&nbsp;订阅警报</li>
+          </ul>
+        </div>
+    </div>
+   
+</ion-content>
+

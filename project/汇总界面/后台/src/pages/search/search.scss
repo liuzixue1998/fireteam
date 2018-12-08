@@ -1,0 +1,316 @@
+page-search {
+    .div{
+        width:90rem;
+        height: 5rem;
+        line-height: 5rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 0 auto;
+    }
+    .div1{
+        float:left;
+        margin-left: 4rem;
+        margin-right: 10rem;
+        color: #ffff;
+    }
+    .div2{
+        float: left;
+        color:#ffff;
+    }
+    .div3{
+        float: left;
+        margin-left: 50rem;
+        color:#ffff;
+    }
+    .div4{
+        float: left;
+        margin-left: 2rem;
+        color:#ffff;
+    }
+    .div5{
+        float: left;
+        position: absolute;
+        margin-left: 83rem;
+        img{
+            width:6%;
+            margin-top:1.2rem;
+            border-radius: 50%;
+        }
+    }
+    .div6{
+        float: left;
+        color:#ffff;
+        margin-left: 6rem;
+    }
+    .bot{
+        width:90rem;
+        height: 50rem;
+        margin:0 auto;
+    }
+    .left{
+        width:18rem;
+        height: 50rem;
+        float: left;
+        margin-top: 0rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        ul li{
+            list-style: none;
+            color: #ffff;
+            margin-left: -2rem;
+            .ion1{
+                margin-left: 12rem;
+            }
+            .ion2{
+                margin-left: 9.6rem;
+            }
+            .ion3{
+                margin-left: 9.6rem;
+            }
+            .ion4{
+                margin-left: 9.6rem;
+            }
+            .ion5{
+                margin-left: 7.3rem;
+            }
+            .ion6{
+                margin-left: 9.6rem;
+            }
+            .ion7{
+                margin-left: 9.6rem;
+            }
+        }
+    }
+    .right{
+        width:72rem;
+        height: 50rem;
+        position: absolute;
+    }
+    .right1{
+        margin-top: 2rem;
+        margin-left: 20rem;
+        p{
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .right2{
+       margin-left: 6rem;
+        li{
+            position: relative;
+            float: left;
+            width: 30%;
+            margin: 0.5rem -7rem 1rem 9rem;
+        }
+    }
+    .right3{
+        margin-left: 6rem;
+         li{
+             position: relative;
+             float: left;
+             width: 30%;
+             margin: -5rem -7rem 1rem 9rem;
+         }
+     }
+     .right4{
+         margin-left: 6rem;
+         
+     }
+     .right4-l{
+        margin-left: 15rem;
+        margin-top: -2rem;
+         .touxiang{
+             width:15%;
+             border-radius: 50%;
+         }
+         #wenzi{
+             font-size: 2rem;
+             margin-left: 1rem;
+         }
+         .liulan{
+             margin-left: -4rem;
+             margin-top: 8rem;
+             img{
+                 width: 100%;
+             }
+             li{
+                 position: relative;
+                 width: 4%;
+                 float: left;
+                margin: 2rem 0.1rem 2rem 0.2rem;
+             }
+         }
+       .guode{
+           float: left;
+           margin-top: 4rem;
+           height: 3rem;
+           line-height: 3rem;
+           p{
+               float: left;
+               margin-left: -9rem;
+           }
+           ion-icon{
+            float: left;
+            margin-left: -1rem;
+            margin-top: 1.8rem;
+           }
+       }
+     }
+.table{
+    width: 70rem;
+    position: relative;
+    left: 30rem;
+    top:-32rem;
+    #title{
+        margin: 0%;
+        padding: 0;
+        display: inline-block;
+        #status{
+            padding: 1rem 3rem 1rem 6rem;
+            background-color: #fafafa;
+            margin: 0%;
+            float: left;
+            border-bottom: solid 1px;
+            border-bottom-color: #e8e8e8;
+        }
+        .li1{
+            background-color: #fafafa;
+            margin: 0%;
+            padding: 1rem 2rem;
+            float: left;
+            border-bottom: solid 1px;
+            border-bottom-color: #e8e8e8;
+           
+        }
+        .li2{
+            background-color: #fafafa;
+            margin: 0%;
+            padding: 1rem 5rem;
+            float: left;
+            border-bottom: solid 1px;
+            border-bottom-color: #e8e8e8;
+        }
+    }
+   .text1{
+       .txt1{
+           padding: 0.1rem 3rem 0.3rem 0rem;
+       }
+       .txt2{
+        padding: 0.1rem 0rem 0.3rem 1rem;
+       }
+       .txt3{
+        padding: 0.1rem 2rem 0.3rem 6rem;
+       }
+       .txt4{
+        padding: 0.1rem 2rem 0.3rem 6rem
+       }
+       .txt5{
+        padding: 0.1rem 2rem 0.3rem 1rem;
+       }
+       .txt6{
+        padding: 0.1rem 2rem 0.3rem 0rem;
+        color:#1890ff;
+       }
+   }
+   .text2{
+    margin: 0%;
+    padding: 0;
+    margin-left: 3.3rem;
+    display: inline-block;
+    .txt1{
+        padding: 0.1rem 3rem 0.3rem 0rem;
+    }
+    .txt2{
+     padding: 0.1rem 0rem 0.3rem 1rem;
+    }
+    .txt3{
+     padding: 0.1rem 2rem 0.3rem 6rem;
+    }
+    .txt4{
+     padding: 0.1rem 2rem 0.3rem 6rem
+    }
+    .txt5{
+     padding: 0.1rem 2rem 0.3rem 1rem;
+    }
+    .txt6{
+     padding: 0.1rem 2rem 0.3rem 0rem;
+     color:#1890ff;
+    }
+   }
+   .text3{
+    margin: 0%;
+    padding: 0;
+    margin-left: 3.3rem;
+    display: inline-block;
+    .txt1{
+        padding: 0.1rem 3rem 0.3rem 0rem;
+    }
+    .txt2{
+     padding: 0.1rem 0rem 0.3rem 1rem;
+    }
+    .txt3{
+     padding: 0.1rem 2rem 0.3rem 6rem;
+    }
+    .txt4{
+     padding: 0.1rem 2rem 0.3rem 6rem
+    }
+    .txt5{
+     padding: 0.1rem 2rem 0.3rem 1rem;
+    }
+    .txt6{
+     padding: 0.1rem 2rem 0.3rem 0rem;
+     color:#1890ff;
+    }
+   }
+   .text4{
+    margin: 0%;
+    padding: 0;
+    margin-left: 3.3rem;
+    display: inline-block;
+    .txt1{
+        padding: 0.1rem 3rem 0.3rem 0rem;
+    }
+    .txt2{
+     padding: 0.1rem 0rem 0.3rem 1rem;
+    }
+    .txt3{
+     padding: 0.1rem 2rem 0.3rem 6rem;
+    }
+    .txt4{
+     padding: 0.1rem 2rem 0.3rem 6rem
+    }
+    .txt5{
+     padding: 0.1rem 2rem 0.3rem 1rem;
+    }
+    .txt6{
+     padding: 0.1rem 2rem 0.3rem 0rem;
+     color:#1890ff;
+    }
+   }
+   .text5{
+    margin: 0%;
+    padding: 0;
+    margin-left: 3.3rem;
+    display: inline-block;
+    .txt1{
+        padding: 0.1rem 3rem 0.3rem 0rem;
+    }
+    .txt2{
+     padding: 0.1rem 0rem 0.3rem 1rem;
+    }
+    .txt3{
+     padding: 0.1rem 2rem 0.3rem 6rem;
+    }
+    .txt4{
+     padding: 0.1rem 2rem 0.3rem 6rem
+    }
+    .txt5{
+     padding: 0.1rem 2rem 0.3rem 1rem;
+    }
+    .txt6{
+     padding: 0.1rem 2rem 0.3rem 0rem;
+     color:#1890ff;
+    }
+   }
+ 
+}
+}
+
+

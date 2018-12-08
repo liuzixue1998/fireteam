@@ -1,0 +1,50 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding>
+    <div class="div">
+        <div class="div1">西遇管理后台</div>
+        <div class="div2"> <ion-icon name="ios-list-outline"></ion-icon>&nbsp;&nbsp;首页</div>
+        <div class="div3"><ion-icon name="md-search"></ion-icon></div>
+        <div class="div4"><ion-icon name="md-notifications"></ion-icon></div>
+        <div class="div5">
+          <img src="assets/imgs/032.jpg" alt="">
+        </div>
+        <div class="div6">用户名</div>
+      </div>
+      
+      <div class="bot">
+        <div class="left">
+          <ul>
+            <li >首页<ion-icon name="ios-arrow-forward" class="ion1"></ion-icon></li>
+            <li (click)="govideo()">视频管理<ion-icon name="ios-arrow-forward" class="ion2"></ion-icon></li>
+            <li (click)="gouser()">用户管理<ion-icon name="ios-arrow-forward" class="ion3"></ion-icon></li>
+            <li (click)="gotxtmg()">帖子管理<ion-icon name="ios-arrow-forward" class="ion4"></ion-icon></li>
+            <li (click)="gotogether()">结伴信息管理<ion-icon name="ios-arrow-forward" class="ion5"></ion-icon></li>
+            <li (click)="gosearch()">搜索历史<ion-icon name="ios-arrow-forward" class="ion6"></ion-icon></li>
+            <li (click)="gofeed()">反馈管理<ion-icon name="ios-arrow-forward"class="ion7"></ion-icon></li>
+          </ul>
+        </div>
+        <div class="right">
+            <h1>西遇APP后台管理首页</h1>
+            <div class="table">
+              <h3>注册</h3>
+              <form action="">
+                <input type="text" placeholder="邮箱" >
+                <br>
+                <input type="password" placeholder="6-16位密码，区分大小写" >
+                <br>
+                <input type="password" placeholder="确认密码" >
+                <br>
+                <input type="text" placeholder="11位手机号">
+                <br>
+                <input type="text" placeholder="输入验证码" class="yanzheng"> <input type="button" value="获取验证码" class="get">
+                <br>
+                <button>注册</button> <span class="np" (click)="login()">使用已有账号登陆</span>
+              </form>
+            </div>
+            
+          </div>
+      </div>
+  
+</ion-content>

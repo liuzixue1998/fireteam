@@ -1,0 +1,182 @@
+page-video {
+    ion-content{
+
+        .div{
+            width:90rem;
+            height: 5rem;
+            line-height: 5rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: 0 auto;
+        }
+        .div1{
+            float:left;
+            margin-left: 4rem;
+            margin-right: 10rem;
+            color: #ffff;
+        }
+        .div2{
+            float: left;
+            color:#ffff;
+        }
+        .div3{
+            float: left;
+            margin-left: 50rem;
+            color:#ffff;
+        }
+        .div4{
+            float: left;
+            margin-left: 2rem;
+            color:#ffff;
+        }
+        .div5{
+            float: left;
+            position: absolute;
+            margin-left: 83rem;
+            img{
+                width:6%;
+                margin-top:1.2rem;
+                border-radius: 50%;
+            }
+        }
+        .div6{
+            float: left;
+            color:#ffff;
+            margin-left: 6rem;
+        }
+        .bot{
+            width:90rem;
+            height: 50rem;
+            margin:0 auto;
+        }
+        .left{
+            width:18rem;
+            height: 50rem;
+            margin-top: -1.15rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            ul li{
+                list-style: none;
+                color: #ffff;
+                margin-left: -2rem;
+                .ion1{
+                    margin-left: 12rem;
+                }
+                .ion2{
+                    margin-left: 9.6rem;
+                }
+                .ion3{
+                    margin-left: 9.6rem;
+                }
+                .ion4{
+                    margin-left: 9.6rem;
+                }
+                .ion5{
+                    margin-left: 7.3rem;
+                }
+                .ion6{
+                    margin-left: 9.6rem;
+                }
+                .ion7{
+                    margin-left: 9.6rem;
+                }
+            }
+        }
+
+        .num{
+            background-color: #e5e5e5;
+            color: #7e7e7e;
+            float: left;
+            position: relative;
+            top:-51rem;
+            left: 52rem;
+            li{
+                width: 22rem;
+                font-size: 1.5rem;
+                height: 7rem;
+                position: relative;
+                top:1rem;
+                left: 5rem;
+            }
+            span{
+                color: #222222;
+                font-size: 2rem;
+            }
+        }
+        .cut{
+            position: relative;
+            top:-40rem;
+            left: -25rem;
+            p{
+                position: relative;
+                top:-3rem;
+                left: 9rem;
+            }
+            li{
+                width: 7rem;
+                border: 1px solid #2a82e4;
+                font-size: 1.4rem;
+                color: #8b8b8b;
+                text-align: center;
+                position: relative;
+                top:-6rem;
+                left: 30rem;
+            }
+            .chan{
+                background-color: #2a82e4;
+                color: white;
+            }
+            .search{
+                position: relative;
+                top:-6rem;
+                left: 35rem;
+               ion-icon{
+                position: relative;
+                left: -2rem;
+                }
+            }
+        }
+        .time{
+            background-color: #2a82e4;
+            color: white;
+            font-size: 1.5rem;
+            width: 70rem;
+            position: relative;
+            top:-46rem;
+            left: 52rem;
+            border-radius: 0.8rem;
+            margin-top: 2rem;
+            span{
+                position: relative;
+                left: 52rem;
+                top:-0.5rem;
+            }
+        }
+        .table{
+            display: inline-block;
+            position: relative;
+            top:-45rem;
+            left: 50rem;
+            width: 78rem;
+            color: white;
+            font-weight: bold;
+            li{
+                margin-right: 6rem;
+            }
+        }
+        .pages{
+            position: relative;
+            top:-44rem;
+            left: 54rem;
+            li{
+                margin-right: 3rem;
+            }
+            .numb{
+                background-color: #4d555d; 
+                color: white; 
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+    }
+}
