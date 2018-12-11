@@ -109,4 +109,37 @@ export class ContactPage {
       this.shoushu--;
     }
   }
+  num=0;
+  num7=0;
+  num8=0;
+  zan(){
+   var ion1=document.getElementById("ion");
+ 
+   if(this.num++%2==1){
+     ion1.style.color="#FF9966";
+   }
+   else{
+     ion1.style.color="black";
+   }
+ }
+ zan5(){
+   var ion2=document.getElementById("ion2");
+ 
+   if(this.num7++%2==1){
+     ion2.style.color="#FF9966";
+   }
+   else{
+     ion2.style.color="black";
+   }
+ }
+ zan6(){
+   var ion3=document.getElementById("ion3");
+ 
+   if(this.num8++%2==1){
+     ion3.style.color="#FF9966";
+   }
+   else{
+     ion3.style.color="black";
+   }
+ }
 }
