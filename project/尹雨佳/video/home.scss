@@ -1,0 +1,36 @@
+page-home{
+    video{
+        width: 95%;
+        margin-top:1rem;
+        margin-left: 0.8rem;
+    }
+    .touxiang{
+        margin-left: 0.5rem;
+        img{
+            width: 10%;
+            border-radius: 50%;
+            float: left;
+        }
+        p{
+            float: left;
+        }
+        .pingjia{
+            margin-left: 16rem;
+            margin-top: 1.6rem;
+            .zan{
+                margin-right: 0.5rem;
+                font-size: 2rem;
+            }
+            .pinglun{
+                margin-left: 1rem;
+                margin-right: 0.5rem;
+                font-size: 2rem;
+            }
+            .more{
+                margin-left: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+   
+}
