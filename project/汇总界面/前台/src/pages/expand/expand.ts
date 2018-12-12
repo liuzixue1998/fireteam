@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import{AddPage} from '../pages/add/add';
+import{AddPage} from '../add/add';
 /**
  * Generated class for the ExpandPage page.
  *
