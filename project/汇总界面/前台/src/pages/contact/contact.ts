@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {HttpClient} from '@angular/common/http';
 import {TieziPage} from '../tiezi/tiezi';
-import {Tiezi1Page} from '../tiezi1/tiezi1'
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html'
@@ -23,9 +22,7 @@ export class ContactPage {
   gotiezi(){
     this.navCtrl.push(TieziPage);
   }
-  gotiezi1(){
-    this.navCtrl.push(Tiezi1Page);
-  }
+ 
   shuzi1=622;
   shuzi2=622;
   shuzi3=622;
@@ -102,7 +99,7 @@ export class ContactPage {
     var xing=document.getElementById("xing");
     this.num6++;
     if(this.num6%2===1){
-    xing.style.color="yellow"
+    xing.style.color="#FF9966"
   this.shoushu++}
     else{
       xing.style.color="black";
@@ -112,34 +109,45 @@ export class ContactPage {
   num=0;
   num7=0;
   num8=0;
+  zan1=1234;
+  zan2=1015;
+  zan3=416;
   zan(){
    var ion1=document.getElementById("ion");
- 
-   if(this.num++%2==1){
-     ion1.style.color="#FF9966";
+    this.num++;
+   if(this.num%2==1){
+     ion1.style.color="red";
+     this.zan1++;
+     console.log('111');
    }
    else{
      ion1.style.color="black";
+     console.log('222');
+     this.zan1--;
    }
  }
  zan5(){
    var ion2=document.getElementById("ion2");
- 
-   if(this.num7++%2==1){
+  this.num7++;
+   if(this.num7%2==1){
      ion2.style.color="#FF9966";
+     this.zan2++;
    }
    else{
      ion2.style.color="black";
+     this.zan2--;
    }
  }
  zan6(){
    var ion3=document.getElementById("ion3");
- 
-   if(this.num8++%2==1){
+  this.num8++;
+   if(this.num8%2==1){
      ion3.style.color="#FF9966";
+     this.zan3++;
    }
    else{
      ion3.style.color="black";
+     this.zan3--;
    }
  }
 }

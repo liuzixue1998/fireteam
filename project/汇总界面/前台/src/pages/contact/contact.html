@@ -12,7 +12,7 @@
   <div *ngSwitchCase="0">
   <ul class="tiezi">
     <li>
-      <div (click)="gotiezi1()">
+      <div>
       <img src="assets/imgs/005.jpg" alt="">
       <p>
         游一处风景，寻一处特色；见一处特色，悟一片心得。江南的绮丽.....
@@ -31,7 +31,7 @@
      
     </li>
     <li>
-      <div (click)="gotiezi1()">
+      <div>
       <img src="assets/imgs/005.jpg" alt="">
       <p>
         游一处风景，寻一处特色；见一处特色，悟一片心得。江南的绮丽.....
@@ -40,7 +40,7 @@
       </div>
     </li>
     <li>
-      <div (click)="gotiezi1()">
+      <div>
       <img src="assets/imgs/004.jpg" alt="">
       <p>
         游一处风景，寻一处特色；见一处特色，悟一片心得。江南的绮丽.....
@@ -71,41 +71,41 @@
   <div *ngSwitchCase="2">
     <video controls>
       <source src="assets/douzi.mp4" type="video/mp4">
-  </video>
-  <div class="touxiang">
+   </video>
+  <div class="touxiang1">
       <HR>
       <img src="assets/imgs/032.jpg" alt="">
       <p>冯豆子</p>
       <div class="pingjia">
-      <ion-icon  name="md-thumbs-up" class="zan"(click)="zan()" id="ion"> </ion-icon>1367 
-      <ion-icon  name="md-text" class="pinglun"></ion-icon>567
+      <ion-icon  name="md-thumbs-up" class="zan"(click)="zan()" id="ion"> </ion-icon>{{zan1}}
+      <ion-icon  name="md-text" class="pinglun1"></ion-icon>
       <ion-icon name="md-more" class="more"></ion-icon>
       </div>   
   </div>
   <video controls>
       <source src="assets/bjt.mp4" type="video/mp4">
   </video>
-  <div class="touxiang">
+  <div class="touxiang1">
       <HR>
       <img src="assets/imgs/032.jpg" alt="">
       <p>seve</p>
       <div class="pingjia">
-          <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" class="zan"(click)="zan5()" id="ion2"> </ion-icon>1367 
-          <ion-icon ios="ios-text" md="md-text" class="pinglun"></ion-icon>567
-          <ion-icon md="md-more" class="more"></ion-icon>
+          <ion-icon name="md-thumbs-up" class="zan"(click)="zan5()" id="ion2"> </ion-icon>{{zan2}} 
+          <ion-icon  name="md-text" class="pinglun1"></ion-icon>
+          <ion-icon name="md-more" class="more"></ion-icon>
       </div> 
   </div>
   <video controls>
       <source src="assets/bjt2.mp4" type="video/mp4">
   </video>
-  <div class="touxiang">
+  <div class="touxiang1">
       <HR>
       <img src="assets/imgs/032.jpg" alt="">
       <p>白敬亭</p>
       <div class="pingjia">
-          <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" class="zan"(click)="zan6()" id="ion3"> </ion-icon>1367 
-          <ion-icon ios="ios-text" md="md-text" class="pinglun"></ion-icon>567
-          <ion-icon md="md-more" class="more"></ion-icon>
+          <ion-icon name="md-thumbs-up" class="zan"(click)="zan6()" id="ion3"> </ion-icon>{{zan3}} 
+          <ion-icon  name="md-text" class="pinglun1"></ion-icon>
+          <ion-icon name="md-more" class="more"></ion-icon>
       </div> 
   </div>
   </div>
