@@ -30,6 +30,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { PostPage } from '../pages/post/post';
 import { MatePage } from '../pages/mate/mate';
 import { LivePage } from '../pages/live/live';
+import{ExpandPage} from '../pages/expand/expand';
 import { HttpClientModule } from '@angular/common/http';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { ImagePicker, ImagePickerOptions } from '@ionic-native/image-picker';
@@ -67,7 +68,8 @@ import { BaseUI } from '../common/baseui';
     ThreePage,
     Tiezi1Page,
     TieziPage,
-    SearchPage
+    SearchPage,
+    ExpandPage
   ],
   imports: [
     BrowserModule,
@@ -104,7 +106,8 @@ import { BaseUI } from '../common/baseui';
     ThreePage,
     Tiezi1Page,
     TieziPage,
-    SearchPage
+    SearchPage,
+    ExpandPage
   ],
   providers: [
     NoticeService,

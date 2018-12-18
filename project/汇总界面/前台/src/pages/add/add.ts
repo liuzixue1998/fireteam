@@ -4,7 +4,7 @@ import { HomePage } from '../home/home';
 import { LivePage } from '../live/live';
 import { PostPage } from '../post/post';
 import { MatePage } from '../mate/mate';
-
+import{ExpandPage} from '../expand/expand';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { ImagePicker, ImagePickerOptions } from '@ionic-native/image-picker';
 import { FileTransfer, FileTransferObject, FileUploadOptions } from '@ionic-native/file-transfer';
@@ -78,7 +78,9 @@ export class AddPage {
   matee(){
     this.navCtrl.push(MatePage);
   }
-
+  goexpand(){
+    this.navCtrl.push(ExpandPage);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddPage');
   }
