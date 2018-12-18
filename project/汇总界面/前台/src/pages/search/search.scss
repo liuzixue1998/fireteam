@@ -40,7 +40,7 @@ page-search {
         .text{
             position: absolute;
             top: 2.6rem;
-            right:8rem;
+            right:3rem;
         }
     }
     p{
@@ -58,15 +58,10 @@ page-search {
             margin: 0rem 1rem 1rem 1rem;
         }
     }
-    ion-content{
-        p{
-            
-        }
-    .his{
-        position: relative;
-        top:3rem;
-        left: -28rem;
-        
-    }
-}
+   span{
+       position: absolute;
+       margin-top: 6rem;
+       margin-left: 22rem;
+   }
+
 }
