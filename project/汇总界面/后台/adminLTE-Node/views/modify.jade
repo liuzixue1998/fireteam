@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 修改密码
+    link(href='/stylesheets/modify.css', rel='stylesheet')
+  body
+    h2 修改密码
+    form(action='/modify', method='post')
+      div.inp
+        label 账号：&nbsp;&nbsp;&nbsp;
+        input#phone.phone(name='phone', type='text', placeholder='请输入手机号')
+      br
+      div.inp
+        label 旧密码：
+        input#pwd.pwd(name='pwd', type='password', placeholder='请输入密码')
+      br
+      div.inp
+        label 新密码：
+        input#reset_pwd.pwd(name='reset_pwd', type='password', placeholder='请输入新密码')
+      br
+      button 修改
+

@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 登陆
+    link(href='/stylesheets/login.css', rel='stylesheet')
+  body
+    h2.regTittle 西遇app后台管理登录
+    form(action='/login.do', method='post')
+      div.inp
+        label.form-label 用户：
+        input#phone.phone(name='phone', type='text', placeholder='请输入手机号')
+      br
+      div.inp
+        label.form-label 密码：
+        input#pwd.pwd(name='pwd', type='password', placeholder='请输入密码')
+      br
+      a(href='/home')#doLogin.doReg 登录
+
