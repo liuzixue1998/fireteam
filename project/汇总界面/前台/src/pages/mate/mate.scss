@@ -83,6 +83,57 @@ page-mate {
                 font-size: 3rem;
             }
         }
+        .one{
+            position: relative;
+            // border-bottom: 4px solid #BBBBBB;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+           
+            .tou{
+                position: relative;
+                bottom: 16rem;
+                right:-1rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                border-radius: 50%;
+            };
+            #name1{
+                position: relative;
+                bottom: 18.5rem;
+                right: -2rem;
+            }
+            #time1{
+                position: relative;
+                bottom: 17rem;
+                right: 1.4rem;
+            }
+            }
+            p{
+               margin-top: 0rem;
+               position: relative;
+               top: -14.5rem;
+               left: 1.5rem;
+               border-bottom: 1px solid #BBBBBB;
+            }
+            // #place{
+            //     position: relative;
+            //     left: -10rem;
+            // }
+            .cu{
+                font-size: 2rem;
+                color: #AAAAAA;
+                position: relative;
+                top:-15rem;
+                left: 22rem;
+                span{
+                    position: relative;
+                    top:1rem;
+                  
+                }
+            }
+            
+        }
+    
         .jieban1{
             font-size: 1.5rem;
             border-bottom: 4px solid #BBBBBB;
@@ -170,4 +221,3 @@ page-mate {
             }
         }
     }
-}

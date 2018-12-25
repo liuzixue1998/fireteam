@@ -13,13 +13,13 @@
     <span id="name">哈哈</span>
 
     <ion-item style="width: 25rem; height: 5rem;"> 
-      <ion-input type="text" placeholder="地点|西安"></ion-input>
+      <ion-input type="text" placeholder="地点|西安"  [(ngModel)]="place"></ion-input>
     </ion-item>
     <ion-item style="width: 25rem;height: 5rem;">
-      <ion-input type="text" placeholder="时间|2018-11-20~2018-12-01"></ion-input>
+      <ion-input type="text" placeholder="时间|2018-11-20~2018-12-01" [(ngModel)]="time"></ion-input>
     </ion-item>
     <ion-item style="width: 25rem;height: 5rem;">
-      <ion-input type="text" placeholder="人数|4人"></ion-input>
+      <ion-input type="text" placeholder="人数|4人"  [(ngModel)]="num"></ion-input>
     </ion-item>
   </div>
 
@@ -27,7 +27,23 @@
     <p>他们在找伴</p>
     <ion-icon name="md-arrow-dropdown" class="iccon"></ion-icon>
   </div>
-
+  <div class="one" id="play" style="display: none" >
+    <img src="../../assets/imgs/touxiang.png" alt="" class="tou">
+     <span id="name1">哈哈</span>
+     <span id="time1">刚刚</span>
+     <p>地点：<span style="color: #009688;">石家庄->{{obj[0]}}</span> 
+     <br> 
+      时间：{{obj[1]}}
+     <br> 
+     人数：{{obj[2]}}
+     <br>
+     欢迎结伴~~
+     </p>
+     <div class="cu">
+      <ion-icon name="md-text"></ion-icon> <span>评论</span>
+      <ion-icon name="md-thumbs-up"></ion-icon> <span>点赞</span>
+    </div>
+</div>
   <div class="jieban1">
     <img id="touxiang" src="../../assets/imgs/comment-touxiang.png" alt="">
     <span id="name">哈哈</span>
