@@ -1,0 +1,173 @@
+extends ../../views/layout/base
+block content  
+    section.content-header
+        style.
+            .border{
+                position:relative;
+                top:2rem;
+                border-top:1px solid #bfbfbf;
+            }
+            /*表格头*/
+            .panel.panel-default{
+                width:95%;
+                position:relative;
+                top:3rem;
+                left:2%;
+                font-size:2rem;
+            }
+            table  tr  th{
+                padding:0 4.2rem;
+                
+            }
+            table   tr  td{
+                padding:0 2rem;
+            }
+            /*用户头像*/
+            img{    
+                width:4rem;
+                height:4rem;
+                margin-top:0rem;
+                padding:0;
+                border-radius: 50%;
+                position:relative;
+                left:6rem;
+            }
+            /*用户信息第一行*/
+            .table  tr  td{
+                position:relative;
+
+            }
+            /*分页*/
+            .pagination{
+                position:relative;
+                left:5rem;
+                font-size:2rem;
+                margin-left:5rem;
+            }
+            .btn.btn-danger{
+                
+            }
+
+        h1
+            | 用户管理
+            small This is the user management page
+        .border
+        //表格头
+        .panel.panel-default
+            // Default panel contents
+            .panel-heading
+                table
+                    tr
+                        th(style="padding-left:6rem;")  用户头像
+                        th  用户ID
+                        th  用户名
+                        th  用户密码
+                        th  发帖数
+                        th  关注
+                        th  粉丝
+                        th  操作
+            .panel-body
+                //表格信息
+                table.table
+                        tr
+                            td
+                                img(src='../../image/01.jpg', alt='')
+                            td(style='padding-left:11.5rem;')  001
+                            td(style='left:-8rem;')  啦啦啦  
+                            td(style='left:-9.5rem;')  1234lala
+                            td(style='left:-9rem;')  7
+                            td(style='left:-1.5rem;')  20  
+                            td(style='left:2.5rem;')  100
+                            td(style='left:4rem;')   
+                                button.btn.btn-danger(type='button') 删除
+                        tr
+                            td
+                                img(src='../../image/01.jpg', alt='')
+                            td(style='padding-left:11.5rem;')  001
+                            td(style='left:-8rem;')  啦啦啦   
+                            td(style='left:-9.5rem;')  1234lala
+                            td(style='left:-9rem;')  7
+                            td(style='left:-1.5rem;')  20  
+                            td(style='left:2.5rem;')  100
+                            td(style='left:4rem;')   
+                                button.btn.btn-danger(type='button') 删除
+                        tr
+                            td
+                                img(src='../../image/01.jpg', alt='')
+                            td(style='padding-left:11.5rem;')  001
+                            td(style='left:-8rem;')  啦啦啦   
+                            td(style='left:-9.5rem;')  1234lala
+                            td(style='left:-9rem;')  7
+                            td(style='left:-1.5rem;')  20  
+                            td(style='left:2.5rem;')  100
+                            td(style='left:4rem;')   
+                                button.btn.btn-danger(type='button') 删除
+                        tr
+                            td
+                                img(src='../../image/01.jpg', alt='')
+                            td(style='padding-left:11.5rem;')  001
+                            td(style='left:-8rem;')  啦啦啦   
+                            td(style='left:-9.5rem;')  1234lala
+                            td(style='left:-9rem;')  7
+                            td(style='left:-1.5rem;')  20  
+                            td(style='left:2.5rem;')  100
+                            td(style='left:4rem;')   
+                                button.btn.btn-danger(type='button') 删除
+                        tr
+                            td
+                                img(src='../../image/01.jpg', alt='')
+                            td(style='padding-left:11.5rem;')  001
+                            td(style='left:-8rem;')  啦啦啦   
+                            td(style='left:-9.5rem;')  1234lala
+                            td(style='left:-9rem;')  7
+                            td(style='left:-1.5rem;')  20  
+                            td(style='left:2.5rem;')  100
+                            td(style='left:4rem;')   
+                                button.btn.btn-danger(type='button') 删除
+                        tr
+                            td
+                                img(src='../../image/01.jpg', alt='')
+                            td(style='padding-left:11.5rem;')  001
+                            td(style='left:-8rem;')  啦啦啦   
+                            td(style='left:-9.5rem;')  1234lala
+                            td(style='left:-9rem;')  7
+                            td(style='left:-1.5rem;')  20  
+                            td(style='left:2.5rem;')  100
+                            td(style='left:4rem;')   
+                                button.btn.btn-danger(type='button') 删除
+                        tr
+                            td
+                                img(src='../../image/01.jpg', alt='')
+                            td(style='padding-left:11.5rem;')  001
+                            td(style='left:-8rem;')  啦啦啦   
+                            td(style='left:-9.5rem;')  1234lala
+                            td(style='left:-9rem;')  7
+                            td(style='left:-1.5rem;')  20  
+                            td(style='left:2.5rem;')  100
+                            td(style='left:4rem;')   
+                                button.btn.btn-danger(type='button') 删除
+
+            //翻页
+        nav(aria-label='Page navigation')
+        ul.pagination
+            li.disabled(style='position:relative;margin:0 20rem;')
+            a(href='#', aria-label='Previous')
+                span(aria-hidden='true') «
+            li.active
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 
+                span.sr-only (current)
+            a(href='#', aria-label='Next')
+                span(aria-hidden='true') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»
+        
+       

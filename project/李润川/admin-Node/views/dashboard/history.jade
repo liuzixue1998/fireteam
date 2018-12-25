@@ -1,0 +1,221 @@
+extends ../../views/layout/base
+block content  
+    section.content-header
+        style.
+            /*表格头*/
+            .border{
+                position:relative;
+                top:2rem;
+                border-top:1px solid #bfbfbf;
+            }
+            .row{
+                text-align:center;
+                position:relative;
+                top:2.5rem;
+            }
+            /*输入框*/
+            input{
+                border-radius:6px;
+                border:1px solid #bfbfbf;
+            }
+            ul{
+                list-style:none;
+            }
+           
+            
+            .right4-l   li{
+                position: relative;
+                width: 4%;
+                float: left;
+                margin: 2rem 0.1rem 2rem 0.2rem;
+            }
+            input{
+                padding-left:1rem;
+            }
+            /*表格*/
+            .table{
+                width: 80rem;
+                position: relative;
+                left: 5.5rem;
+                top:5rem;
+            }
+            #title{
+                margin: 0%;
+                padding: 0;
+                display: inline-block;
+                font-size:2rem;
+                width:120rem;
+            }
+            .table  ul{
+                margin:0;
+            }
+            .table  ul  li{
+                display:inline-block;
+            }
+            #status{
+                padding: 1rem 3rem 1rem 6rem;
+                background-color: #fafafa;
+                margin: 0%;
+                float: left;
+                border-bottom: solid 1px;
+                border-bottom-color: #e8e8e8;
+            }
+            .li1{
+                background-color: #fafafa;
+                margin: 0%;
+                padding: 1rem 5rem;
+                float: left;
+                border-bottom: solid 1px;
+                border-bottom-color: #e8e8e8;
+            }
+            .li2{
+                background-color: #fafafa;
+                margin: 0%;
+                padding: 1rem 5rem;
+                float: left;
+                border-bottom: solid 1px;
+                border-bottom-color: #e8e8e8;
+            }
+            .text1{
+                margin: 0%;
+                padding: 0;
+                margin-left: 3.3rem;
+                display: inline-block;
+                font-size:1.8rem;
+                width:150rem;
+            }
+            .txt0{
+                padding: 1rem 5rem;
+            }
+            .txt1{
+                padding: 1rem 5rem
+            }
+            .txt2{
+                padding: 1rem 2rem
+                
+            }
+            .txt3{
+                padding: 1rem 7rem;
+            }
+            .txt4{
+                padding: 1rem 2rem  1rem  6.5rem;
+            }
+            .txt5{
+                padding: 0.1rem 0.5rem 0.3rem 7.5rem;
+            }
+            .txt6{
+                padding: 0.1rem 2rem 0.3rem 3rem;
+                color:#1890ff;
+            }
+
+        h1
+            | 历史管理
+            small This is the history management page
+
+        .border
+
+        .row
+            .col-md-4 用户名
+                br
+                input.inp1(placeholder='请输入用户名')(style='height:4rem;')
+            .col-md-4 历史网址
+                br
+                .input-group(style='border-radius:12px;')
+                    span#basic-addon3.input-group-addon https://
+                    input#basic-url.form-control(type='text', aria-describedby='basic-addon3')
+                    span#basic-addon3.input-group-addon .com
+            .col-md-4 帖子类型
+                br
+                input(type='text', list='itemlist', name='',placeholder='请输入帖子类型')(style='height:4rem;')
+                datalist#itemlist
+                    option 心得
+                    option 攻略
+        br
+        .row
+            .col-md-4 帖子作者
+                br
+                input(type='text', list='itemlist', name='',placeholder='请输入作者')(style='height:4rem;')
+                datalist#itemlist
+                    option 莫言
+                    option 鲁迅
+            .col-md-4 发布时间
+                br
+                input(type='datetime-local')
+            .col-md-4 浏览时间
+                br
+                input(type='datetime-local', placeholder='浏览时间')
+
+        
+
+        //表格
+        .table
+            ul#title
+                li.li1 用户
+                li.li1 搜索历史
+                li.li1 描述
+                li#status 帖子浏览数
+                li.li1 是否收藏
+                li.li1 更新时间
+                li.li2 操作
+            ul.text1
+                li.txt0 哈哈
+                li.txt1 今天很高兴
+                li.txt2 这是一段描述
+                li.txt3 357万
+                li.txt4 否
+                li.txt5 2017-10-31 23:12:00
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
+            ul.text1
+                li.txt0 哈哈
+                li.txt1 今天很高兴
+                li.txt2 这是一段描述
+                li.txt3 357万
+                li.txt4 否
+                li.txt5 2017-10-31 23:12:00
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
+            ul.text1
+                li.txt0 哈哈
+                li.txt1 今天很高兴
+                li.txt2 这是一段描述
+                li.txt3 357万
+                li.txt4 否
+                li.txt5 2017-10-31 23:12:00
+                li.txt6         
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
+            ul.text1
+                li.txt0 哈哈
+                li.txt1 今天很高兴
+                li.txt2 这是一段描述
+                li.txt3 357万
+                li.txt4 否
+                li.txt5 2017-10-31 23:12:00
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
+            ul.text1
+                li.txt0 哈哈
+                li.txt1 今天很高兴
+                li.txt2 这是一段描述
+                li.txt3 357万
+                li.txt4 否
+                li.txt5 2017-10-31 23:12:00
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
+            
+
+
+
+
+            
+        

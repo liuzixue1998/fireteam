@@ -1,0 +1,889 @@
+extends layout/base
+//- meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+block content  
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Iwiki - Dashboard
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/animate.min.css')
+    link(rel='stylesheet', href='css/vendors/sweetalert.css')
+    link(rel='stylesheet', href='css/vendors/loading.css')
+    link(rel='stylesheet', href='css/vendors/calendar-mini.css')
+    link(rel='stylesheet', href='css/skins/light.css')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='js/modernizr.js')
+    link(rel='icon', href='img/favicon.ico', type='image/x-icon')
+    link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+    //if lt IE 9
+      script(src='js/html5shiv.min.js')
+      script(src='js/respond.src.js')
+  body
+          .morphsearch-content
+            .dummy-column
+              h2 People
+              a.dummy-media-object(href='#')
+                img.round(src='../public/img/images/search/50.png', alt='Sara Soueidan')
+                h3 Sara Soueidan
+              a.dummy-media-object(href='#')
+                img.round(src='img/images/search/50.png', alt='Sara Soueidan')
+                h3 Rachel Smith
+              a.dummy-media-object(href='#')
+                img.round(src='img/images/search/50.png', alt='Peter Finlan')
+                h3 Peter Finlan
+              a.dummy-media-object(href='#')
+                img.round(src='img/images/search/50.png', alt='Patrick Cox')
+                h3 Patrick Cox
+              a.dummy-media-object(href='#')
+                img.round(src='img/images/search/50.png', alt='Tim Holman')
+                h3 Tim Holman
+              a.dummy-media-object(href='#')
+                img.round(src='img/images/search/50.png', alt='Shaun Dona')
+                h3 Shaun Dona
+            .dummy-column
+              h2 Popular
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-2.png', alt='PagePreloadingEffect')
+                h3 Page Preloading Effect
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-2.png', alt='ArrowNavigationStyles')
+                h3 Arrow Navigation Styles
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-2.png', alt='HoverEffectsIdeasNew')
+                h3 Ideas for Subtle Hover Effects
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-2.png', alt='FreebieHalcyonDays')
+                h3 Halcyon Days Template
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-2.png', alt='ArticleIntroEffects')
+                h3 Inspiration for Article Intro Effects
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-2.png', alt='DraggableDualViewSlideshow')
+                h3 Draggable Dual-View Slideshow
+            .dummy-column
+              h2 Recent
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-3.png', alt='TooltipStylesInspiration')
+                h3 Tooltip Styles Inspiration
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-3.png', alt='AnimatedHeaderBackgrounds')
+                h3 Animated Background Headers
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-3.png', alt='OffCanvas')
+                h3 Off-Canvas Menu Effects
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-3.png', alt='TabStyles')
+                h3 Tab Styles Inspiration
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-3.png', alt='ResponsiveSVGs')
+                h3 Make SVGs Responsive with CSS
+              a.dummy-media-object(href='#')
+                img(src='img/images/search/50-3.png', alt='NotificationStyles')
+                h3 Notification Styles Inspiration
+          span.morphsearch-close
+            svg
+              use(xlink:href='#icon-close')
+        .unit.email
+          span#email-btn.btn-email
+          #email-content.mail-content
+            a.unit(href='javascript:void(0);')
+              img(src='img/images/mail-widget/60.png', alt='mail')
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.unit(href='javascript:void(0);')
+              img(src='img/images/mail-widget/60-2.png', alt='mail')
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.unit(href='javascript:void(0);')
+              img(src='img/images/mail-widget/60-3.png', alt='mail')
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.unit(href='javascript:void(0);')
+              img(src='img/images/mail-widget/60-4.png', alt='mail')
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.show-all.btn.btn-danger(href='javascript:void(0);') Show all mails
+        .unit.message
+          span#message-btn.btn-message
+          #message-content.message-content
+            .percent
+              .percent-title Database Repair
+              .percent-mark 70%
+              .percent-value.color-1(style='width: 70%;')
+            .percent
+              .percent-title Database Repair
+              .percent-mark 10%
+              .percent-value.color-2(style='width: 10%;')
+            a.unit(href='javascript:void(0);')
+              span.icon-android
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.unit(href='javascript:void(0);')
+              span.icon-album
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.unit(href='javascript:void(0);')
+              span.icon-science
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.unit(href='javascript:void(0);')
+              span.icon-box
+              p
+                | It is a long esta blished fact that a reader distracted by the readable content of
+            a.clear-all.btn.btn-danger(href='javascript:void(0);') Clear all
+            .check-ok
+              i.fa.fa-check-circle
+              br
+              span.text-uppercase Empty
+        #backet.unit.backet
+          .backet-title Cart
+          .backet-content
+            .unit.total
+              h6.total-title Total
+              .total-price $17.50
+              button.total-buy(type='button') Buy
+              span.total-continue continue shoping
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart1.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart2.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart3.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart3.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart2.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart4.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart2.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart3.jpg', alt='Product')
+            .unit.text-color-white
+              span.trigger.btn-close
+                svg
+                  use(xlink:href='#icon-close')
+              .unit-bg
+                .name Dress
+                .price $17.50
+              .img
+                img(src='img/images/cart/cart2.jpg', alt='Product')
+      #somedialog.dialog
+        .dialog__overlay
+        .dialog__content
+          h2
+            strong Howdy
+            | , I'm a dialog box
+          div
+            button.btn.btn-danger.action(type='button', data-dialog-close='') Close
+      .content.container-fluid
+        .row.row-broken
+          .col-md-12
+            ol.breadcrumb
+              li
+                a(href='index.html')
+                  i.fa.fa-home
+              li.active Dashboard
+        .row.row-broken
+          
+          .col-sm-6.col-md-3
+            .decor-default.inform.inform-view-1.inform-3
+              .inform-value 9001
+              .inform-name Today Visitors
+          .col-sm-6.col-md-3
+            .decor-default.inform.inform-view-1.inform-4
+              .inform-value 350
+              .inform-name New message
+          .col-sm-6.col-md-3
+            .decor-primary.inform.inform-view-2
+              .inform-value 74%
+              .inform-name Loaded
+              #inform-1.inform-canvas(data-percent='74') 74%
+          .col-sm-6.col-md-3
+            .decor-info.inform.inform-view-2
+              .inform-value 46%
+              .inform-name New users
+              #inform-2.inform-canvas(data-percent='46') 46%
+        .row.row-broken(data-height='')
+          .col-sm-12.col-md-6
+            .decor-default.chart(data-height-col='')
+              .p-full-md
+                h6.m-r-md.m-b-md.pull-left
+                  | Energy predicrions
+                .setting.f-r
+                  span.setting-btn
+                  ul.setting-popup
+                    li setting 1
+                    li
+                      a(href='#') setting 2
+                    li setting 3
+                    li setting 4
+                    li setting 5
+                .clearfix
+                .chart-statistics
+                  p Quisque volutpat condimentum velit. Class aptent taciti
+                  span.up.color-primary.f-l 10.360
+                  span.line.color-warning.f-r
+                    | total visitor 
+                    span 26.349
+                  span.line.color-success.f-r.f-c
+                    | total orders 
+                    span 16.349
+                  span.line.color-primary.f-r.f-c
+                    | new orders 
+                    span 16.349
+              .chart-container.full
+                canvas#chartLine
+          .col-sm-12.col-md-6
+            .decor-default.chart.p-full-md(data-height-col='')(style='width:780px;')
+              h6.m-r-md.m-b-md.pull-left
+                | Logarithmic Axis
+              .setting.f-r
+                span.setting-btn
+                ul.setting-popup
+                  li setting 1
+                  li
+                    a(href='#') setting 2
+                  li setting 3
+                  li setting 4
+                  li setting 5
+              .clearfix
+              .chart-statistics
+                span.line.color-warning.f-r
+                  | total visitor 
+                  span 26.349
+                span.line.color-primary.f-r.f-c
+                  | new orders 
+                  span 16.349
+              .chart-container.absolute
+                canvas#chartBar
+        .row.decor-info.color-default.visitors
+          .col-lg-8.visitors-map
+            img(src='img/grid-map.png', alt='image')
+          .col-lg-4.visitors-stat
+            h6 Unique Visitors
+            .unit
+              div From Europe
+              .scale
+                span(style='width: 36%;')
+                div 36%
+            .unit
+              div From North America
+              .scale
+                span(style='width: 24%;')
+                div 24%
+            .unit
+              div From Asia
+              .scale
+                span(style='width: 20%;')
+                div 20%
+            .unit
+              div Other
+              .scale
+                span(style='width: 20%;')
+                div 20%
+        .row.row-broken(data-height='')
+          .col-sm-12.col-md-4
+            .chart-mini.chart-mini-3.decor-primary(data-height-col='')
+              .legend-top.p-full-md
+                .name.f-l Eneergy Predictions
+                .value.f-r $14.360
+                .description.f-c.p-t-md Last Sale 23.45 USD
+              .chart-container-mini
+                canvas#chart-mini-3.chart-body
+          .col-sm-12.col-md-4
+            .chart-mini.chart-mini-4.decor-success(data-height-col='')
+              .legend-top.p-full-md
+                .name.f-l Eneergy Predictions
+                .value.f-r $14.360
+                .description.f-c.p-t-md 2% higher than last month
+              .chart-container-mini
+                canvas#chart-mini-4.chart-body
+          .col-sm-12.col-md-4
+            .chart-mini.chart-mini-5.decor-warning(data-height-col='')
+              .legend-top.p-full-md
+                .name.f-l Eneergy Predictions
+                .value.f-r $14.360
+                .description.f-c.p-t-md 2% higher than last month
+              .chart-container-mini.full.absolute
+                canvas#chart-mini-5.chart-body
+        .row.row-broken(data-height='')
+          .col-sm-12.col-md-6
+            .decor-default.chart.p-full-md(data-height-col='')
+              h6.m-r-md.m-b-md.pull-left
+                | Energy Predictions
+              .setting.f-r
+                span.setting-btn
+                ul.setting-popup
+                  li setting 1
+                  li
+                    a(href='#') setting 2
+                  li setting 3
+                  li setting 4
+                  li setting 5
+              .clearfix
+              .chart-stat-1.p-full-md
+                .unit
+                  .h OVERALL VIEWS
+                  h5.color-warning $ 657,212
+                  span.s 2 % higher than last month
+                .unit
+                  .h MY BALANCE
+                  span.s $ 11, 675
+                  img(src='img/icon-89.png', alt='image')
+                .unit
+                  .h NEW ORDERS
+                  span.s $ 23,453
+                  img(src='img/icon-90.png', alt='image')
+              .clearfix
+              .chart-container.absolute
+                canvas#cl1.view-2
+          .col-sm-12.col-md-6
+            .decor-default.chart(data-height-col='')
+              h6.m-r-md.m-t-md.m-b-md.m-l-md.pull-left
+                | Energy Predictions
+              .setting.f-r.m-t-md.m-r-md
+                span.setting-btn
+                ul.setting-popup
+                  li setting 1
+                  li
+                    a(href='#') setting 2
+                  li setting 3
+                  li setting 4
+                  li setting 5
+              .clearfix
+              .chart-stat-2
+                .unit
+                  | Total usage
+                  h5.color-success 21,463 KB
+                .unit
+                  | Cerrently
+                  h5.color-primary 21,463 KB
+                .unit
+                  | Average
+                  h5.color-warning 21,463 KB
+                br
+                br
+                br
+                .unit-group
+                  .unit Mai App
+                  .unit 234,678 uers are using
+                  .unit 35,65 KB
+                .unit-group
+                  .unit Calendar
+                  .unit 234,678 uers are using
+                  .unit 35,65 KB
+              .chart-container.full
+                canvas#cl2.view-1
+        .row.row-broken(data-height='')
+          .col-sm-12.col-md-4
+            .team.decor-default.p-full-md(data-height-col='')
+              h6 Team
+              .team-body.peppermint
+                .list.active
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                .list.active
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                .list.active
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-2.png', alt='team')
+                  img(src='img/images/team/64.png', alt='team')
+                  img(src='img/images/team/64-3.png', alt='team')
+              .team-nav
+                span.active
+                span
+                span
+          .col-sm-12.col-md-4
+            .developing.p-full-md.decor-default(data-height-col='')
+              h6 Time to design
+              .field-group.color-primary.f-c
+                .field-1.f-l
+                  | 23.4
+                  sup h
+                  .field-1-sub Design
+                .field-2.f-r
+                  span.delta.up 4%
+                  .field-2-sub above avg.
+              .field-group.color-warning.f-c
+                .field-1.f-l
+                  | 38
+                  sup h
+                  .field-1-sub Front-end
+                .field-2.f-r
+                  span.delta.down 7%
+                  .field-2-sub above avg.
+              .field-group.color-success.f-c
+                .field-1.f-l
+                  | 45.5
+                  sup h
+                  .field-1-sub Back-end
+                .field-2.f-r
+                  span.delta.down 2%
+                  .field-2-sub above avg.
+              .field-group.color-info.f-c
+                .field-1.field-1-total.f-l
+                  | 107
+                  sup h
+                  .field-1-sub Total hours
+                .field-2.f-r
+                  span.delta.up 1%
+                  .field-2-sub above avg.
+          .col-sm-12.col-md-4(data-height-col='')
+            .weather.view-2.decor-warning.p-full-md
+              .weather-location Amman
+              .weather-icon-name Sunny
+              canvas#icon2.weather-icon(width='128', height='128')
+              .weather-degree 44°
+            #calendar-mini.decor-default.p-full-md.m-t-md
+      .footer
+       
+    #wrap-menu.wrap-menu
+      span#menu-btn-close.menu-btn-close
+        svg
+          use(xlink:href='#icon-close')
+      h1.menu-title Navigation
+      ul#menu.menu
+        li#menu-btn-back.back
+          span Back
+        li.profile
+          i.fa.fa-user
+          a(href='profile.html') User profile
+        li.dashboard
+          i.fa.fa-bars.more
+          i.fa.fa-th
+          span Dashboard
+          ul.menu
+            li
+              i.fa.fa-hashtag
+              a(href='index.html') Dashboard v1
+            li
+              i.fa.fa-cube
+              a(href='dashboard2.html') Dashboard v2
+            li
+              i.fa.fa-laptop
+              a(href='index-light.html') Light Skin
+            li
+              i.fa.fa-life-ring
+              a(href='index-dark.html') Dark Skin
+            li
+              i.fa.fa-image
+              a(href='index-dim.html') Dim Skin
+        li.mailbox
+          i.fa.fa-bars.more
+          i.fa.fa-envelope-o
+          span Mailbox
+          ul.menu
+            li
+              i.fa.fa-list-ul
+              a(href='email-list.html') Email list
+            li
+              i.fa.fa-inbox
+              a(href='email-inbox.html') Email inbox
+            li
+              i.fa.fa-paper-plane-o
+              a(href='email-send.html') Email send
+        li.calendar
+          i.fa.fa-calendar
+          a(href='calendar.html') Calendar
+        li.css
+          i.fa.fa-bars.more
+          i.fa.fa-desktop
+          span CSS
+          ul.menu
+            li
+              i.fa.fa-font
+              a(href='typography.html') Typography
+            li
+              i.fa.fa-briefcase
+              a(href='buttons.html') Buttons
+            li
+              i.fa.fa-check-circle-o
+              a(href='checkboxes.html') Checkboxes
+            li
+              i.fa.fa-bell
+              a(href='notification.html') Notification
+            li
+              i.fa.fa-keyboard-o
+              a(href='input.html') Input Fields
+            li
+              i.fa.fa-spinner
+              a(href='loading.html') Loading
+            li
+              i.fa.fa-diamond
+              a(href='dialogs.html') Dialogs
+        li.widgets
+          i.fa.fa-th-list
+          a(href='widgets.html') Widgets
+        li.charts
+          i.fa.fa-edit
+          a(href='charts.html') Charts
+        li.pages
+          i.fa.fa-bars.more
+          i.fa.fa-file
+          span Pages
+          ul.menu
+            li
+              i.fa.fa-crop
+              a(href='crop.html') Crop
+            li
+              i.fa.fa-sliders
+              a(href='filter.html') Filter
+            li
+              i.fa.fa-picture-o
+              a(href='gallery.html') Gallery
+            li
+              i.fa.fa-camera-retro
+              a(href='slider.html') Slider
+            li
+              i.fa.fa-list-alt
+              a(href='todo.html') To do list
+            li
+              i.fa.fa-comment
+              a(href='chat.html') Chat
+            li
+              i.fa.fa-mobile
+              a(href='contacts.html') Contacts
+            li
+              i.fa.fa-phone
+              a(href='contact.html') Contact
+            li
+              i.fa.fa-clock-o
+              a(href='timeline.html') Timeline
+            li
+              i.fa.fa-magic
+              a(href='wizard.html') Wizard
+            li
+              i.fa.fa-book
+              a(href='register.html') Register
+    #overlay.overlay
+    svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 28 28', style='display: none;', xml:space='preserve')
+      g#icon-close
+        line(x1='2', y1='2', x2='26', y2='26')
+        line(x1='2', y1='26', x2='26', y2='2')
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery.nicescroll.min.js')
+    script(src='js/classie.js')
+    script(src='js/ui.js')
+    script(src='js/search.js')
+    script(src='js/sweetalert.min.js')
+    script(src='js/jquery.easypiechart.min.js')
+    script(src='js/calendar.js')
+    script(type='text/javascript').
+      $(document).ready(function () {
+      $('#inform-1').easyPieChart({
+      barColor: '#f2a654',
+      trackColor: '#585b9c',
+      scaleColor: false,
+      lineWidth: 6,
+      size: 60,
+      animate: 1000
+      });
+      $('#inform-2').easyPieChart({
+      barColor: '#7266ba',
+      trackColor: '#34aed4',
+      scaleColor: false,
+      lineWidth: 6,
+      size: 60,
+      animate: 1000
+      });
+      });
+    script(src='js/chart.js')
+    script.
+      Chart.defaults.global.animationEasing = "easeOutBounce";
+      Chart.defaults.global.pointLabelFontSize = 12;
+      Chart.defaults.global.responsive = true;
+      Chart.defaults.global.maintainAspectRatio = false;
+      var lineChartData = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+      {
+      label: "Default",
+      fillColor: "#7266ba",
+      strokeColor: "#7266ba",
+      pointColor: "#7266ba",
+      data: [23, 41, 35, 48, 45, 34, 37]
+      },
+      {
+      label: "Success",
+      fillColor: "#46be8a",
+      strokeColor: "#46be8a",
+      pointColor: "#46be8a",
+      data: [13, 35, 30, 43, 37, 27, 30]
+      },
+      {
+      label: "Warning",
+      fillColor: "#f2a654",
+      strokeColor: "#f2a654",
+      pointColor: "#f2a654",
+      data: [10, 21, 24, 34, 26, 17, 20]
+      },
+      ]
+      }
+      var barChartData = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+      {
+      fillColor: "#7266ba",
+      highlightFill: "#585b9c",
+      data: [10, 21, 58, 64, 21, 35, 55]
+      },
+      {
+      fillColor: "#f2a654",
+      highlightFill: "#f2a654",
+      data: [13, 25, 10, 68, 10, 2, 46]
+      }
+      ]
+      }
+      var cm3Data = {
+      labels: ["1", "2", "3", "4", "5", "6", "7"],
+      datasets: [
+      {
+      label: "Default",
+      fillColor: "transparent",
+      strokeColor: "#ffffff",
+      pointColor: "#7266ba",
+      pointStrokeColor: "#ffffff",
+      data: [5, 0, 10, 20, 15, 20, 20]
+      }
+      ]
+      };
+      var cm4Data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+      {
+      fillColor: "#ffffff",
+      highlightFill: "#7266ba",
+      data: [10, 21, 58, 64, 21, 35, 55]
+      }
+      ]
+      };
+      var cm5Data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+      {
+      label: "Default",
+      fillColor: "#7266ba",
+      strokeColor: "#7266ba",
+      pointColor: "#7266ba",
+      data: [23, 41, 35, 48, 45, 34, 37]
+      }
+      ]
+      };
+      var cl1Data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+      {
+      label: "Default",
+      fillColor: "transparent",
+      strokeColor: "#39bee8",
+      pointColor: "#39bee8",
+      data: [5, 10, 15, 25, 22, 20, 25]
+      },
+      {
+      label: "Success",
+      fillColor: "transparent",
+      strokeColor: "#f2a654",
+      pointColor: "#f2a654",
+      data: [0, 5, 8, 17, 20, 25, 30]
+      }
+      ]
+      };
+      var cl2Data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+      {
+      label: "Default",
+      fillColor: "#7266ba",
+      strokeColor: "#7266ba",
+      pointColor: "#7266ba",
+      data: [8, 10, 14, 12, 10, 12, 14]
+      },
+      {
+      label: "Default",
+      fillColor: "#46be8a",
+      strokeColor: "#46be8a",
+      pointColor: "#46be8a",
+      data: [5, 8, 12, 10, 8, 10, 12]
+      }
+      ]
+      };
+      window.onload = function () {
+      var ctxLine = document.getElementById("chartLine").getContext("2d");
+      var ctxBar = document.getElementById("chartBar").getContext("2d");
+      var cm3 = document.getElementById("chart-mini-3").getContext("2d");
+      var cm4 = document.getElementById("chart-mini-4").getContext("2d");
+      var cm5 = document.getElementById("chart-mini-5").getContext("2d");
+      var cl1 = document.getElementById("cl1").getContext("2d");
+      var cl2 = document.getElementById("cl2").getContext("2d");
+      window.myLine = new Chart(ctxLine).Line(lineChartData, {
+      showScale: false,
+      pointDot: false
+      });
+      window.myBar = new Chart(ctxBar).Bar(barChartData, {
+      showScale: false,
+      barShowStroke: false,
+      barValueSpacing: 0,
+      barDatasetSpacing: 0
+      });
+      window.myLine = new Chart(cm3).Line(cm3Data, {
+      showScale: false,
+      pointDotStrokeWidth: 3,
+      bezierCurve: false
+      });
+      window.myBar = new Chart(cm4).Bar(cm4Data, {
+      showScale: false,
+      barShowStroke: false,
+      barValueSpacing: 50,
+      barDatasetSpacing: 0
+      });
+      window.myLine = new Chart(cm5).Line(cm5Data, {
+      showScale: false,
+      pointDot: false,
+      bezierCurve: false
+      });
+      window.myLine = new Chart(cl1).Line(cl1Data, {
+      showScale: false,
+      pointDot: false,
+      bezierCurve: false
+      });
+      window.myLine = new Chart(cl2).Line(cl2Data, {
+      showScale: false,
+      pointDot: false,
+      bezierCurve: false
+      });
+      };
+    script.
+      $(document).ready(function () {
+      $("#calendar-mini").zabuto_calendar({
+      today: true,
+      weekstartson: 0,
+      legend: [
+      {
+      type: "text",
+      label: "Meet your friends today",
+      badge: "11:30"
+      },
+      {
+      type: "text",
+      label: "Tweet “thanks” for your followers",
+      badge: "21:00"
+      }
+      ]
+      });
+      });
+    script(src='js/skycons.js')
+    script.
+      var skycons = new Skycons({
+      "color": "white"
+      });
+      skycons.add("icon1", Skycons.PARTLY_CLOUDY_DAY);
+      skycons.add("icon2", Skycons.CLEAR_DAY);
+      skycons.play();
+    script(src='js/jquery.nicescroll.min.js')
+    script(src='js/TweenMax.min.js')
+    script(src='js/chat.js')
+    script(src='js/peppermint.min.js')
+    script.
+      $(".chat-messages").niceScroll();
+      $('.team-body').Peppermint({
+      dots: true
+      });

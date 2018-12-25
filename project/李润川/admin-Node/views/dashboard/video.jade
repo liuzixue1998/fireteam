@@ -1,0 +1,252 @@
+extends ../../views/layout/base
+block content  
+    section.content-header
+        style.
+            .border{
+                position:relative;
+                top:2rem;
+                border-top:1px solid #bfbfbf;
+            }
+            /*视频数量*/
+            li{
+                list-style:none;
+            }
+            .num{
+                background-color: #e5e5e5;
+                color: #7e7e7e;
+                float: left;
+                position: relative;
+                top:3rem;
+                left: 2rem;
+                width:123rem;
+               
+            }
+            .num    li{
+                display:inline-block;
+                list-style:none;
+                width: 10rem;
+                font-size: 1.5rem;
+                height: 7rem;
+                padding-top:1.2rem;
+                margin:0 10rem;
+                position:relative;
+                left:9%;
+            }
+            .num    span{
+                color: #222222;
+                font-size: 2rem;
+            }
+            /*表格*/
+            .cut{
+                position: relative;
+                top:-3rem;
+                left: 1rem;
+                height:12rem;
+                weight:100%;
+            }
+            
+            .cut    li{
+                width: 7rem;
+                border: 1px solid #2a82e4;
+                font-size: 1.7rem;
+                color: #8b8b8b;
+                text-align: center;
+                position: relative;
+                top:6rem;
+                left: 2rem;
+                display:inline-block;
+            }
+            .chan{
+                background-color: #2a82e4;
+                color: white;
+            }
+            .search{
+                position: relative;
+                top:2.45rem;
+                left: 105rem;
+            }
+            .glyphicon.glyphicon-search{
+                position:relative;
+                left:-2rem;
+            }
+            .time{
+                background-color: #2a82e4;
+                color: white;
+                font-size: 1.5rem;
+                width: 109rem;
+                position: relative;
+                top:-1rem;
+                left: 9rem;
+                border-radius: 0.8rem;
+                margin-top: 2rem;
+            }
+            .time   span{
+                position: relative;
+                left: 80rem;
+                top:0rem;
+            }
+
+            /*表格内容*/
+            .table{
+                position: relative;
+                top:2rem;
+                left: 8rem;
+                width: 115rem;
+                color: white;
+                font-weight: bold;
+            }
+            .table  li{
+                display: inline-block;
+                margin:0 5rem;
+            }
+
+            /*分页*/
+            .pagination{
+                position:relative;
+                left:5rem;
+                font-size:2rem;
+                margin-left:5rem;
+            }
+            .btn.btn-info{
+                background-color:#2a82e4;
+            }
+        //标题  
+        h1
+            | 视频管理
+            small This is the video management page
+
+        .border
+        //视频数量
+        ul.num
+            li  今日视频数
+                br
+                span    67个任务
+            li  本周视频数
+                br
+                span    240个任务
+            li  发布视频总数
+                br
+                span    5000个任务
+            
+       
+    // Main content
+    section.content
+        //表格
+        .cut
+            ul
+                li  全部
+                li.chan 已发视频
+                li  正在拍摄
+            .search
+                input(type='text', placeholder='请输入')
+                span.glyphicon.glyphicon-search(aria-hidden='true')
+            .time
+
+        .time
+            span 发布时间
+
+            
+        //表格内容
+        ul.table
+            li(style='position:relative;top:-2rem;background-color: #597ef7; width: 4rem;height: 4rem;border-radius: 0.5rem;text-align: center;') 视频
+            li(style='color: #8c8c8c;')
+                | 一个视频名称
+                br
+                | 一段假想的简介，这是一段比较长的简介
+            li(style='color: #8c8c8c;')
+                | Owner 
+                br
+                |  哈哈
+            li(style='color: #8c8c8c;')
+                | 开始时间
+                br
+                |  2018-12-01 13:14
+            li(style='color: #1d92ff;position:relative;top:-2rem;') 
+                button.btn.btn-info(type='button')  编辑
+                &nbsp;
+                button.btn.btn-info(type='button')  删除
+
+        ul.table
+            li(style='position:relative;top:-2rem;background-color: #597ef7; width: 4rem;height: 4rem;border-radius: 0.5rem;text-align: center;') 视频
+            li(style='color: #8c8c8c;')
+                | 一个视频名称
+                br
+                | 一段假想的简介，这是一段比较长的简介
+            li(style='color: #8c8c8c;')
+                | Owner 
+                br
+                |  哈哈
+            li(style='color: #8c8c8c;')
+                | 开始时间
+                br
+                |  2018-12-01 13:14
+            li(style='color: #1d92ff;position:relative;top:-2rem;') 
+                button.btn.btn-info(type='button')  编辑
+                &nbsp;
+                button.btn.btn-info(type='button')  删除
+
+
+        ul.table
+            li(style='position:relative;top:-2rem;background-color: #597ef7; width: 4rem;height: 4rem;border-radius: 0.5rem;text-align: center;') 视频
+            li(style='color: #8c8c8c;')
+                | 一个视频名称
+                br
+                | 一段假想的简介，这是一段比较长的简介
+            li(style='color: #8c8c8c;')
+                | Owner 
+                br
+                |  哈哈
+            li(style='color: #8c8c8c;')
+                | 开始时间
+                br
+                |  2018-12-01 13:14
+            li(style='color: #1d92ff;position:relative;top:-2rem;') 
+                button.btn.btn-info(type='button')  编辑
+                &nbsp;
+                button.btn.btn-info(type='button')  删除
+
+
+        ul.table
+            li(style='position:relative;top:-2rem;background-color: #597ef7; width: 4rem;height: 4rem;border-radius: 0.5rem;text-align: center;') 视频
+            li(style='color: #8c8c8c;')
+                | 一个视频名称
+                br
+                | 一段假想的简介，这是一段比较长的简介
+            li(style='color: #8c8c8c;')
+                | Owner 
+                br
+                |  哈哈
+            li(style='color: #8c8c8c;')
+                | 开始时间
+                br
+                |  2018-12-01 13:14
+            li(style='color: #1d92ff;position:relative;top:-2rem;') 
+                button.btn.btn-info(type='button')  编辑
+                &nbsp;
+                button.btn.btn-info(type='button')  删除
+
+
+
+
+        //翻页
+        nav(aria-label='Page navigation')
+        ul.pagination
+            li.disabled(style='position:relative;margin:0 20rem;')
+            a(href='#', aria-label='Previous')
+                span(aria-hidden='true') «
+            li.active
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 
+                span.sr-only (current)
+            a(href='#', aria-label='Next')
+                span(aria-hidden='true') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»
