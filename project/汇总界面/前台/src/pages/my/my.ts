@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CollectionPage } from '../collection/collection';
-import { PostsPage } from '../posts/posts';
+import { LoginPage } from '../login/login';
 import { SettingPage } from '../setting/setting';
-import { AccountPage } from '../account/account';
-/**
- * Generated class for the MyPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+
+
+
 
 @IonicPage()
 @Component({
@@ -17,30 +13,32 @@ import { AccountPage } from '../account/account';
   templateUrl: 'my.html',
 })
 export class MyPage {
-  collectionPage;
-  postsPage;
+  private headers=new HttpHeaders({'Content-Type':'application/x-www-form-urlencoded'} )
   settingPage;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.collectionPage = CollectionPage;
-    this.postsPage = PostsPage;
-    this.settingPage = SettingPage;
+  man: string;
+  username;
+  signature;
+  my;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public http:HttpClient) {
+    this.settingPage=SettingPage;
+    this.man = localStorage.getItem('man');
+  }
+  ionViewWillEnter(){
+    this.http.get('http://192.168.142.144:8080/'+'my',{
+      headers:new HttpHeaders({
+      }),
+    }).subscribe((data)=>{
+      this.my=data;
+      LoginPage.t=this.username;
+        this.username = data[0].username;
+        this.signature = data[0].signature;
+      console.log(this.username,this.signature);
+    });
+  }
+ 
+  pushSetting(){
+    this.navCtrl.push(this.settingPage);
   }
 
-  pushCollectionPage(){
-    this.navCtrl.push(CollectionPage);
-  }
-  
-  pushPostsPage(){
-    this.navCtrl.push(PostsPage);
-  }
-
-  pushSettingPage(){
-    this.navCtrl.push(SettingPage);
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyPage');
-  }
 
 }

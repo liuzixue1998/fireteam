@@ -1,72 +1,78 @@
 page-my {
-    // 头像框
-    #my-bg{
-        
-        background-image: url(../../assets/imgs/017.jpg);
-        background-size:cover;
-        background-position:center;
-        #bg-color{
-            background-color: rgba(136, 139, 139, 0.4);
-            width: 100%;
-            height: 18rem;
-        }
+ // 头像框
+ #my-bg{
+    
+    background-size:cover;
+    background-position:center;
+    #bg-color{
+        background-color: rgba(136, 139, 139, 0.4);
+        width: 100%;
+        height: 18rem;
     }
-    #touxiang{
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
-        position: relative;
-        // margin: auto;
-        top:25%;
-        left:5%;
-    }
-    #name{
-        // font-weight: bolder;
-        font-size: 2rem;
-        position: relative;
-        bottom:-40%;
-        right:10%;
-    }
+}
+#touxiang{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+    // margin: auto;
+    top:25%;
+    left:24%;
+}
+#name{
+    // font-weight: bolder;
+    font-size: 2rem;
+    position: relative;
+    bottom:-40%;
+    right:-5%;
+}
+#signature{
+    // font-weight: bolder;
+    font-size: 1.5rem;
+    position: relative;
+    bottom:-55%;
+    right: 20%;
+}
 
-    // 导航框
-    // 粉丝关注栏
-    #content{
-        background-color:#e9e9e9;
-    }
-    ion-col{
-        background-color: white;
-        margin: 2px 0 0 0;
-    }
-    ion-row{
-        margin: 2px 0 0 0;
-    }
-    .col1{
-        margin: 1px;
-    }
+// 导航框
+// 粉丝关注栏
+#content{
+    background-color:#e9e9e9;
+}
+ion-col{
+    background-color: white;
+    margin: 2px 0 0 0;
+}
+ion-row{
+    margin: 2px 0 0 0;
+}
+.col1{
+    margin: 1px;
+}
 
-    // 菜单栏
-    // #col2{
-    //     margin-top: 1px;
-    // }
-    .col-menu{
-        background-color: white;
-        padding-left: 1rem;
-        // margin: 2px 0 0 0;
-    }
-    .icon-all{
-        font-size: 3rem;
-        color: #009688;
-        float: left;
-    }
-    .menu-text{
-        font-size: 2rem;
-        padding:0 0 0 1rem ;
-        margin: 0;
-        position: relative;
-        left:1rem;
-    }
+// 菜单栏
+// #col2{
+//     margin-top: 1px;
+// }
+.col-menu{
+    background-color: white;
+    padding-left: 1rem;
+    // margin: 2px 0 0 0;
+}
+.icon-all{
+    font-size: 3rem;
+    color: #009688;
+    float: left;
+}
+.menu-text{
+    font-size: 2rem;
+    padding:0 0 0 1rem ;
+    margin: 0;
+    position: relative;
+    left:1rem;
+}
 
-    #col3{
-        height: 7.47rem;
-    }
+#col3{
+    height: 7.47rem;
+}
 }
