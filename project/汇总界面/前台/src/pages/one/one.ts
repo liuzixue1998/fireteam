@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SearchPage } from '../search/search';
+import {YemianPage} from '../yemian/yemian'
+import { HttpClient} from '@angular/common/http';
 /**
  * Generated class for the OnePage page.
  *
@@ -30,5 +32,10 @@ export class OnePage {
   }
   close(){
     this.navCtrl.pop();
+  }
+  go(e){
+    var name=e.target.innerText;
+    console.log(name);
+    this.navCtrl.push(YemianPage,name);
   }
 }

@@ -31,6 +31,8 @@ import { PostPage } from '../pages/post/post';
 import { MatePage } from '../pages/mate/mate';
 import { LivePage } from '../pages/live/live';
 import{ExpandPage} from '../pages/expand/expand';
+import{YemianPage} from '../pages/yemian/yemian';
+import{SeasonPage} from '../pages/season/season'
 import { HttpClientModule } from '@angular/common/http';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { ImagePicker, ImagePickerOptions } from '@ionic-native/image-picker';
@@ -41,6 +43,7 @@ import { FilePath } from "@ionic-native/file-path";
 import { ImgService } from '../hh/ImgService';
 import { NoticeService } from '../hh/NoticeService';
 import { BaseUI } from '../common/baseui';
+
 
 @NgModule({
   declarations: [
@@ -69,7 +72,9 @@ import { BaseUI } from '../common/baseui';
     Tiezi1Page,
     TieziPage,
     SearchPage,
-    ExpandPage
+    ExpandPage,
+    YemianPage,
+    SeasonPage
   ],
   imports: [
     BrowserModule,
@@ -107,7 +112,9 @@ import { BaseUI } from '../common/baseui';
     Tiezi1Page,
     TieziPage,
     SearchPage,
-    ExpandPage
+    ExpandPage,
+    YemianPage,
+    SeasonPage
   ],
   providers: [
     NoticeService,
