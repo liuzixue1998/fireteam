@@ -55,7 +55,7 @@ export class EditorPage {
     //console.log('ionViewDidLoad EditorPage');
   }
   ionViewWillEnter() { //page初始化时
-    this.name=LoginPage.t;
+    this.username=LoginPage.t;
   }
   presentPrompt(str) {
     console.log(str);
