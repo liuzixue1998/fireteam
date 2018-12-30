@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AccountPage } from '../account/account';
-import { QuestionPage } from '../question/question';
+import { EditorPage } from '../editor/editor';
+
 /**
  * Generated class for the SettingPage page.
  *
@@ -15,24 +15,15 @@ import { QuestionPage } from '../question/question';
   templateUrl: 'setting.html',
 })
 export class SettingPage {
-  accountPage;
-  questionPage;
-
+  editorPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.accountPage = AccountPage;
-    this.questionPage = QuestionPage;
-  }
-
-  pushAccountPage(){
-    this.navCtrl.push(AccountPage);
-  }
-
-  pushQuestionPage(){
-    this.navCtrl.push(QuestionPage);
+    this.editorPage=EditorPage;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingPage');
+    //console.log('ionViewDidLoad SettingPage');
   }
-
+  pushEditor(){
+    this.navCtrl.push(this.editorPage);
+  }
 }
