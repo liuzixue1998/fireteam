@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { LoginPage } from '../login/login';
+import { SigninPage } from '../signin/signin';
 import { SettingPage } from '../setting/setting';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 
@@ -24,12 +24,12 @@ export class MyPage {
     this.man = localStorage.getItem('man');
   }
   ionViewWillEnter(){
-    this.http.get('http://192.168.142.144:8080/'+'my',{
+    this.http.get('http://192.168.137.144:8080/'+'my',{
       headers:new HttpHeaders({
       }),
     }).subscribe((data)=>{
       this.my=data;
-      LoginPage.t=this.username;
+      SigninPage.t=this.username;
         this.username = data[0].username;
         this.signature = data[0].signature;
       console.log(this.username,this.signature);

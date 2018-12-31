@@ -47,7 +47,7 @@ export class MatePage {
       console.log(this.obj);
       var play=document.getElementById("play");
       play.style.display="block";
-      this.http.post('http://192.168.94.144:8080/'+'mate',this.together,{headers:this.headers}).subscribe((data)=>{
+      this.http.post('http://192.168.137.144:8080/'+'mate',this.together,{headers:this.headers}).subscribe((data)=>{
       });
       
   }

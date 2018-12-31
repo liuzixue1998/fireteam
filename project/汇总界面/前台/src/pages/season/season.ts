@@ -41,7 +41,7 @@ export class SeasonPage {
   spot5;
   spot6;
   constructor(public navCtrl: NavController, public navParams: NavParams,public http:HttpClient,public alertCtrl: AlertController) {
-    this.http.get('http://192.168.94.144:8080/'+'winter',{
+    this.http.get('http://192.168.137.144:8080/'+'winter',{
       headers:new HttpHeaders({})
     }).subscribe((data)=>{
       this.winter=data;

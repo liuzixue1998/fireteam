@@ -33,8 +33,9 @@ export class SigninPage {
   key;
   man;
   tishi;
+  public static t;
   constructor(public app:App,public alertCtrl:AlertController,public http:HttpClient,public navCtrl: NavController, public navParams: NavParams) {
-    this.http.get('http://192.168.142.144:8080/'+'users',{
+    this.http.get('http://192.168.137.144:8080/'+'users',{
       headers:new HttpHeaders({
       }),
     }).subscribe((data) => { // 监听

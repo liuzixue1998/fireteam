@@ -27,6 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AddPage } from '../pages/add/add';
 import { SigninPage } from '../pages/signin/signin';
 import { SignupPage } from '../pages/signup/signup';
+import { EditorPage } from '../pages/editor/editor';
 import { PostPage } from '../pages/post/post';
 import { MatePage } from '../pages/mate/mate';
 import { LivePage } from '../pages/live/live';
@@ -54,6 +55,7 @@ import { BaseUI } from '../common/baseui';
     AddPage,
     SigninPage,
     SignupPage,
+    EditorPage,
     PostPage,
     MatePage,
     LivePage,
@@ -94,6 +96,7 @@ import { BaseUI } from '../common/baseui';
     AddPage,
     SigninPage,
     SignupPage,
+    EditorPage,
     PostPage,
     MatePage,
     LivePage,

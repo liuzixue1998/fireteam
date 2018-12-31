@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App, AlertController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
-import { LoginPage } from '../login/login';
+import { SigninPage } from '../signin/signin';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MyPage } from '../my/my';
 
@@ -25,7 +25,7 @@ export class EditorPage {
 
   logForm() {
   console.log('username',this.username);
-  this.http.post('http://192.168.142.144:8080/'+'my',{
+  this.http.post('http://192.168.137.144:8080/'+'my',{
     "signature":this. signature,
     "username":this.username,
   },{
@@ -55,7 +55,7 @@ export class EditorPage {
     //console.log('ionViewDidLoad EditorPage');
   }
   ionViewWillEnter() { //page初始化时
-    this.username=LoginPage.t;
+    this.username=SigninPage.t;
   }
   presentPrompt(str) {
     console.log(str);

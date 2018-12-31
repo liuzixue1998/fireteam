@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { LivePage } from '../live/live';
 import { PostPage } from '../post/post';
 import { MatePage } from '../mate/mate';
 import{ExpandPage} from '../expand/expand';
@@ -68,10 +67,6 @@ export class AddPage {
     })
   }
   
-
-  livee(){
-    this.navCtrl.push(LivePage);
-  }
   postt(){
     this.navCtrl.push(PostPage);
   }

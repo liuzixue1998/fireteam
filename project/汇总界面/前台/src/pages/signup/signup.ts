@@ -24,7 +24,7 @@ export class SignupPage {
    logForm() {
     console.log(this.name);
     console.log(this.password);
-    this.http.post('http://192.168.142.144:8080/'+'users',{
+    this.http.post('http://192.168.137.144:8080/'+'users',{
       "name":this.name,
       "password":this.password,
     },{

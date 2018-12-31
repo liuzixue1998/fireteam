@@ -42,7 +42,7 @@ export class YemianPage {
   tiyanimg7;
   tiyanimg1;
   constructor(public navCtrl: NavController, public navParams: NavParams,public http:HttpClient,public alertCtrl: AlertController) {
-    this.http.get('http://192.168.94.144:8080/'+'hotcity',{
+    this.http.get('http://192.168.137.144:8080/'+'hotcity',{
       headers:new HttpHeaders({})
     }).subscribe((data)=>{
       this.hotcity=data;

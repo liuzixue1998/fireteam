@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EditorPage } from '../editor/editor';
+import { SigninPage } from '../signin/signin';
 
 /**
  * Generated class for the SettingPage page.
@@ -25,5 +26,8 @@ export class SettingPage {
   }
   pushEditor(){
     this.navCtrl.push(this.editorPage);
+  }
+  pushAccountPage(){
+    this.navCtrl.push(SigninPage);
   }
 }

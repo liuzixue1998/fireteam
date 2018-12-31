@@ -1,7 +1,7 @@
 page-my {
  // 头像框
  #my-bg{
-    
+    background-image: url(../../assets/imgs/017.jpg);
     background-size:cover;
     background-position:center;
     #bg-color{
@@ -17,21 +17,21 @@ page-my {
     position: relative;
     // margin: auto;
     top:25%;
-    left:24%;
+    left:7%;
 }
 #name{
     // font-weight: bolder;
     font-size: 2rem;
     position: relative;
     bottom:-40%;
-    right:-5%;
+    right:4%;
 }
 #signature{
     // font-weight: bolder;
     font-size: 1.5rem;
     position: relative;
     bottom:-55%;
-    right: 20%;
+    right: 10%;
 }
 
 // 导航框
