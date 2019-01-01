@@ -1,0 +1,77 @@
+extends model
+link(rel='stylesheet', href='/stylesheets/style.css')
+link(rel='stylesheet', href='/stylesheets/bootstrap-datetimepicker.min.css')
+script(type='text/javascript' src='/javascripts/jquery-3.2.1.min.js')
+script(type='text/javascript' src='/javascripts/bootstrap-datetimepicker.min.js')
+script(type='text/javascript'  src='/javascripts/bootstrap-datetimepicker.zh-CN.js')
+script(type='text/javascript'  src='/javascripts/jquery.tabletojson.js' )
+link(rel="stylesheet" type="text/css" href="DataTables-1.10.15/media/css/jquery.dataTables.css")
+link(rel='stylesheet' type="text/css" href='/bootstrap-3.3.7-dist/css/bootstrap.min.css')
+script(src='/bootstrap-3.3.7-dist/js/bootstrap.min.js')
+script(type="text/javascript" charset="utf8" src="DataTables-1.10.15/media/js/jquery.dataTables.js")
+block content
+    hr
+    form.form-horizontal(role='form')
+        .form-group
+            label.col-sm-2.col-sm-offset-2.control-label(style='color:#576f95')
+                | 时间
+            .col-sm-6
+                input.form-control.i11(type='text' placeholder='2018-12-29-1019-1-1' ) 
+        .form-group
+            label.col-sm-2.col-sm-offset-2.control-label(style='color:#576f95')
+                | 地点
+            .col-sm-6
+                input.form-control.i12(type='text' placeholder='北京' )
+        .form-group
+            label.col-sm-2.col-sm-offset-2.control-label(style='color:#576f95')
+                | 人数
+            .col-sm-6
+                input.form-control.i13(type='text'  placeholder='4人') 
+        .form-group
+            label.col-sm-2.col-sm-offset-2.control-label(style='color:#576f95')
+                | 旅程描述
+            .col-sm-6
+                textarea.form-control.i14(type='text' rows='12' cols='36'  placeholder='一起去玩呀！'    )
+                
+        .form-group(align='center')
+            .btn.btn-block#b1(style='width:53%;background:#576f95;color:#ffffff;position:relative;left:8rem; top:5rem; ')
+                | 发表
+
+    script(type='text/javascript').
+        $(document).ready(function () {
+            $('#b1').click(function () {
+                if($('.i11').val() == ''){
+                    alert('项目名称不能为空')
+                }
+                else {
+                    if(confirm('确认提交项目基本信息？')){
+                        $.ajax({
+                            url: 'addco/addcopost',
+                            data: {
+                                time: $('.i11').val(),
+                                pla: $('.i12').val(),
+                                num: $('.i13').val(),
+                                des: $('.i14').val(),
+                            },
+                            type: 'POST',
+                            timeout: 36000,
+                            dataType: 'text',
+                            success: function (data, textStatus) {
+                                var dataJson = eval("(" + data + ")");
+                                console.log(dataJson);
+                                if (dataJson.code == 200) {
+                                    alert('数据已成功写入到数据库!')
+                                }
+                                else {
+                                    alert('数据写入失败，请重新填写信息！')
+                                }
+                            }
+                        })
+                    }
+                }
+            })
+
+        })
+
+
+

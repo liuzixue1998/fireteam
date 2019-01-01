@@ -1,0 +1,541 @@
+extends ../../views/layout/base
+block content  
+    section.content-header
+        style.
+            .border{
+                position:relative;
+                top:2rem;
+                border-top:1px solid #bfbfbf;
+            }
+            /*表格头*/
+            
+            /*分页*/
+            .pagination{
+                position:relative;
+                left:5rem;
+                font-size:2rem;
+                margin-left:5rem;
+            }
+            .btn.btn-danger{
+                
+            }
+            .table.table-hover{
+                padding-left:3rem;
+                position:relative;
+                top:3rem;
+                background-color:white;
+            }
+
+        h1
+            | 管理员界面
+            small This is the admin page
+                                button.btn.btn-success(data-toggle='modal' data-target='#modal1')
+                                    | 新增管理员
+                            table.table#tb
+                                thead
+                                    tr
+                                        th
+                                            | ID
+                                        th
+                                            | 用户名
+                                        th
+                                            | 注册日期
+                                        th
+                                            | 详情
+                                        th
+                                            | 操作
+                                tbody
+                                    each person in persons
+                                        tr(class='#{person.class}')
+                                            td #{person.id}
+                                            td #{person.name}
+                                            td #{person.depart}
+                                            td
+                                                button.btn.btn-info.btn-sm.c3(data-toggle='modal' data-target='#modal3')
+                                                    | 详情
+                                            td
+                                                button.btn.btn-primary.btn-sm.c1(data-toggle='modal' data-target='#modal2')
+                                                    | 修改/隐藏
+        .mode#modal1(tabindex='-1' role='dialog' aria-labelledby="label1"
+        aria-hidden="true" class='modal fade' style='width:auto')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        h4.modal-title#label1
+                            | 新增一条管理员信息
+                    .modal-body
+                        table.table.table-bordered.table-striped(align='center')
+                            thead
+                                tr
+                                    th
+                                        | 用户名
+                                    th
+                                        | 选择性别
+                                    th
+                                        | 注册日期
+                                    th
+                                        | 地区
+                                    th
+                                        | 密码
+                                    th
+                                        | 电话
+                                    th
+                                        | 邮箱
+                                    th
+                                        | 权限
+                            tbody
+                                tr
+                                    td
+                                        input.form-control#a1(placeholder='输入用户名')
+                                    td
+                                        select.form-control#a2
+                                            option(value='男')
+                                                |男
+                                            option(value='女')
+                                                |女
+                                    td
+                                        input.form-control#a4(type='date' placeholder='日期')
+                                    td
+                                        input.form-control#a3(placeholder='输地区')
+                                    td
+                                        input.form-control#a5(type='password' placeholder='输入密码')
+                                    td
+                                        input.form-control#a6(placeholder='输入电话')
+                                    td
+                                        input.form-control#a7(placeholder='输入邮箱')
+                                    td
+                                        select.form-control#a2
+                                            option(value='管理员')
+                                                |管理员
+                    .modal-footer
+                        button.btn.btn-default(data-dismiss="modal" type='button')
+                            |取消
+                        button.btn.btn-success.b2(type='button')
+                            |保存
+        .mode#modal2(tabindex='-1' role='dialog' aria-labelledby="label2"
+        aria-hidden="true" class='modal fade' style='width:auto')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        h4.modal-title#label2
+                            | 修改专家信息
+                    .modal-body
+                        table.table.table-bordered.table-striped(align='center')
+                            thead
+                                tr.id2
+                                    th(style='width:100px;')
+                                        | 用户名
+                                    th
+                                        | 选择性别
+                                    th
+                                        | 注册日期
+                                    th
+                                        | 地区
+                                    th
+                                        | 密码
+                                    th
+                                        | 电话
+                                    th
+                                        | 邮箱
+                                    th
+                                        | 权限
+                            tbody
+                                tr
+                                    td
+                                        input.form-control#a1(placeholder='输入用户名')
+                                    td
+                                        select.form-control#a2
+                                            option(value='男')
+                                                |男
+                                            option(value='女')
+                                                |女
+                                    td
+                                        input.form-control#a3(type='date' placeholder='日期')
+                                    td
+                                        select.form-control#a4
+                                            option(value='北京')
+                                                |北京
+                                            option(value='上海')
+                                                |上海
+                                            option(value='河北')
+                                                |河北
+                                            option(value='天津')
+                                                |天津
+                                            option(value='重庆')
+                                                |重庆
+                                                
+                                    td
+                                        input.form-control#a5(type='password' placeholder='输入密码')
+                                    td
+                                        input.form-control#a6(placeholder='输入电话')
+                                    td
+                                        input.form-control#a7(placeholder='输入邮箱')
+                                    td
+                                        select.form-control#a8
+                                            option(value='管理员')
+                                                |管理员
+                    .modal-footer
+                        button.btn.btn-default(data-dismiss="modal" type='button')
+                            | 取消
+                        button.btn.btn-danger.c2
+                            | 隐藏
+                        button.btn.btn-success.b3(type='button')
+                            | 保存
+
+        .mode#modal3(tabindex='-1' role='dialog' aria-labelledby="label3"
+        aria-hidden="true" class='modal fade' style='width:auto')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        h4.modal-title#label3
+                            | 专家详细信息
+                    .modal-body
+                        table.table.table-bordered.table-striped(align='center')
+                            thead
+                                tr
+                                    th
+                                        | 用户名
+                                    th
+                                        | 选择性别
+                                    th
+                                        | 注册日期
+                                    th
+                                        | 地区
+                                    th
+                                        | 密码
+                                    th
+                                        | 电话
+                                    th
+                                        | 邮箱
+                                    th
+                                        | 权限
+                            tbody
+                                    each person in persons
+                                        tr(class='#{person.class}')
+                                            td #{person.id}
+                                            td #{person.name}
+                                            td #{person.sex}
+                                            td #{person.depart}
+                                            td #{person.s1}
+                                            td #{person.s2}
+                                            td #{person.s3}
+                                            td #{person.s4}
+                                            td #{person.s5}
+        .border
+        //表格头
+        table.table.table-hover
+            tr
+                th  姓名
+                th  注册日期
+                th  地址
+                th  权限
+                th  操作
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  嘻嘻
+                td  2018-12-21 14:53
+                td  广州
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  白白
+                td  2018-12-22 13:53
+                td  深圳
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  哈哈哈
+                td  2018-12-22 3:53
+                td  厦门
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  5612318hc
+                td  2018-12-22 6:53
+                td  石家庄
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  我
+                td  2018-12-21 13:53
+                td  天津
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  不
+                td  2018-12-23 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+            tr
+                td  呵呵
+                td  2018-12-21 13:53
+                td  北京
+                td  管理员
+                td  
+                    button.btn.btn-primary(type='button')   编辑
+                    &nbsp;
+                    button.btn.btn-danger(type='button')    删除
+        
+
+        //翻页
+        nav(aria-label='Page navigation')
+        ul.pagination
+            li.disabled(style='position:relative;margin:0 20rem;')
+            a(href='#', aria-label='Previous')
+                span(aria-hidden='true') «
+            li.active
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 
+            a(href='#')
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 
+                span.sr-only (current)
+            a(href='#', aria-label='Next')
+                span(aria-hidden='true') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»
+        
+script(type='text/javascript').
+            $(document).ready(function () {
+                $('.b2').click(function () {
+                    if ($('#a1').val() == '') {
+                        alert('请输入姓名！')}
+                    else {
+                        if (confirm('确认将信息保存到数据库？')) {
+                            $.ajax({
+                                url: '../admin/adminpost',
+                                data: {
+                                    name: $('#a1').val(),
+                                    sex: $('#a2').val(),
+                                    depart: $('#a3').val(),
+                                    s1: $('#a4').val(),
+                                    s2: $('#a5').val(),
+                                    s3: $('#a6').val(),
+                                    s4: $('#a7').val(),
+                                    s5: $('#a8').val()
+                                },
+                                type: 'POST',
+                                timeout: 36000,
+                                dataType: 'text',
+                                success: function (data, textStatus) {
+                                }
+                            });
+                        window.location.href = 'admin';
+                            }
+                    }
+                });
+
+                $('.c2').click(function () {
+                    if(confirm('确认隐藏该专家信息?')){
+                        $(this).parents('tr').remove();
+                        var id2 = $('.c2').val();
+                        $.ajax({
+                            url:'../admin/adminpost2',
+                            data: {
+                                id2: id2
+                            },
+                            type: 'POST',
+                            timeout: 36000,
+                            dataType: 'text',
+                            success: function (data, textStatus) {
+                            }
+                        });
+                    window.location.href = 'admin';
+                    }
+                });
+                $('.c1').click(function () {
+                    var id2 = $(this).parents('tr').children('td').html();
+                    var id1 = $(this).parents('tr').children('td').next().html();
+                    var id4 = $(this).parents('tr').children('td').next().next().html();
+                    var id3 = $(this).parents('tr').children('td').next().next().next().html();
+                    var s1 = $(this).parents('tr').children('td').next().next().next().next().html();
+                    var s2 = $(this).parents('tr').children('td').next().next().next().next().next().html();
+                    var s3 = $(this).parents('tr').children('td').next().next().next().next().next().next().html();
+                    var s4 = $(this).parents('tr').children('td').next().next().next().next().next().next().next().html();
+                    var s5 = $(this).parents('tr').children('td').next().next().next().next().next().next().next().next().html();
+                    $('.id2').val(id2);
+                    $('.c2').val(id2);
+                    $('.nam').val(id1);
+                    $('.depr').val(id3);
+                    $('.sex').val(id4);
+                    $('.s1').val(s1);
+                    $('.s2').val(s2);
+                    $('.s3').val(s3);
+                    $('.s4').val(s4);
+                    $('.s5').val(s5);
+                });
+                $('.b3').click(function () {
+                    if($('#a9').val() == '')
+                    {
+                        alert('请输入姓名！')
+                    }
+                    else {
+                        if (confirm('确认对该专家信息的修改?')) {
+
+                            $.ajax({
+                                url: '../admin/adminpost3',
+                                data: {
+                                    name: $('#a1').val(),
+                                    sex: $('#a2').val(),
+                                    depart: $('#a3').val(),
+                                    s1: $('#a4').val(),
+                                    s2: $('#a5').val(),
+                                    s3: $('#a6').val(),
+                                    s4: $('#a7').val(),
+                                    s5: $('#a8').val()
+                                },
+                                type: 'POST',
+                                timeout: 36000,
+                                dataType: 'text',
+                                success: function (data, textStatus) {
+                                }
+                            });
+                        window.location.href = 'admin';
+                        }
+                    }
+
+                });
+                $('#z4').click(function () {
+                    if(confirm('确认退出登录吗？')){
+                        window.location.href = 'login';
+                    }
+                });
+                $('#z2').click(function () {
+                    window.location.href = 'guanli2'
+                })
+                $('#z3').click(function () {
+                    window.location.href = 'guanli3'
+                });
+
+                $('#tb').DataTable({
+                    "oLanguage": {
+                        "oAria": {
+                            "sSortAscending": " - click/return to sort ascending",
+                            "sSortDescending": " - click/return to sort descending"
+                        },
+                        "sLengthMenu": "显示 _MENU_ 记录",
+                        "sZeroRecords": "对不起，查询不到任何相关数据",
+                        "sEmptyTable": "未有相关数据",
+                        "sLoadingRecords": "正在加载数据-请等待...",
+                        "sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录。",
+                        "sInfoEmpty": "当前显示0到0条，共0条记录",
+                        "sInfoFiltered": "（数据库中共为 _MAX_ 条记录）",
+                        "sProcessing": "<img src='../resources/user_share/row_details/select2-spinner.gif'/> 正在加载数据...",
+                        "sSearch": "模糊查询：",
+                        "sUrl": "",
+                        "oPaginate": {
+                            "sFirst": "首页",
+                            "sPrevious": " 上一页 ",
+                            "sNext": " 下一页 ",
+                            "sLast": " 尾页 "
+                        }
+                    }
+
+                });
+            })
+      
+
