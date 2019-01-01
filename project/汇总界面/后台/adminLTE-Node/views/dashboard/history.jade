@@ -3,6 +3,14 @@ block content
     section.content-header
         style.
             /*表格头*/
+            footer{
+                font-size:20px;
+                position:relative;
+                bottom:-1rem;
+            }
+            .content-header{
+                height:700px;
+            }
             .border{
                 position:relative;
                 top:2rem;
@@ -21,23 +29,8 @@ block content
             ul{
                 list-style:none;
             }
-            /*头像框*/
-            .right4-l{
-            margin-left: 1rem;
-            margin-top: 1rem;
-            }
-            .right4-l   .touxiang{
-                width:7%;
-                border-radius: 50%;
-                margin-top:4rem;
-                margin-left:12rem;
-            }
-            .right4-l   #wenzi{
-                font-size: 2rem;
-                margin-left: 13rem;
-                margin-top:2rem;
-                
-            }
+           
+            
             .right4-l   li{
                 position: relative;
                 width: 4%;
@@ -51,13 +44,15 @@ block content
             .table{
                 width: 80rem;
                 position: relative;
-                left: 40rem;
-                top:-13rem;
+                left: 5.5rem;
+                top:5rem;
             }
             #title{
                 margin: 0%;
                 padding: 0;
                 display: inline-block;
+                font-size:2rem;
+                width:120rem;
             }
             .table  ul{
                 margin:0;
@@ -76,7 +71,7 @@ block content
             .li1{
                 background-color: #fafafa;
                 margin: 0%;
-                padding: 1rem 2rem;
+                padding: 1rem 5rem;
                 float: left;
                 border-bottom: solid 1px;
                 border-bottom-color: #e8e8e8;
@@ -94,25 +89,30 @@ block content
                 padding: 0;
                 margin-left: 3.3rem;
                 display: inline-block;
+                font-size:1.8rem;
+                width:150rem;
+            }
+            .txt0{
+                padding: 1rem 5rem;
             }
             .txt1{
-                padding: 0.1rem 1rem 0.3rem 3rem
+                padding: 1rem 5rem
             }
             .txt2{
-                padding: 0.1rem 0.5rem 0.3rem 1.5rem
+                padding: 1rem 2rem
                 
             }
             .txt3{
-                padding: 0.1rem 2rem 0.3rem 6rem;
+                padding: 1rem 7rem;
             }
             .txt4{
-                padding: 0.1rem 2rem 0.3rem 6rem
+                padding: 1rem 2rem  1rem  6.5rem;
             }
             .txt5{
-                padding: 0.1rem 2rem 0.3rem 3rem;
+                padding: 0.1rem 0.5rem 0.3rem 7.5rem;
             }
             .txt6{
-                padding: 0.1rem 2rem 0.3rem 0rem;
+                padding: 0.1rem 2rem 0.3rem 3rem;
                 color:#1890ff;
             }
 
@@ -153,14 +153,12 @@ block content
                 br
                 input(type='datetime-local', placeholder='浏览时间')
 
-        .right4-l
-            img.touxiang(src='../../image/02.png', alt='')
-            p#wenzi 啦啦啦
-            
+        
 
         //表格
         .table
             ul#title
+                li.li1 用户
                 li.li1 搜索历史
                 li.li1 描述
                 li#status 帖子浏览数
@@ -168,42 +166,61 @@ block content
                 li.li1 更新时间
                 li.li2 操作
             ul.text1
-                li.txt1 哈哈
+                li.txt0 哈哈
+                li.txt1 今天很高兴
                 li.txt2 这是一段描述
                 li.txt3 357万
                 li.txt4 否
                 li.txt5 2017-10-31 23:12:00
-                li.txt6 配置  订阅警报
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
             ul.text1
-                li.txt1 哈哈
+                li.txt0 哈哈
+                li.txt1 今天很高兴
                 li.txt2 这是一段描述
                 li.txt3 357万
                 li.txt4 否
                 li.txt5 2017-10-31 23:12:00
-                li.txt6 配置  订阅警报
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
             ul.text1
-                li.txt1 哈哈
+                li.txt0 哈哈
+                li.txt1 今天很高兴
                 li.txt2 这是一段描述
                 li.txt3 357万
                 li.txt4 否
                 li.txt5 2017-10-31 23:12:00
-                li.txt6 配置  订阅警报
+                li.txt6         
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
             ul.text1
-                li.txt1 哈哈
+                li.txt0 哈哈
+                li.txt1 今天很高兴
                 li.txt2 这是一段描述
                 li.txt3 357万
                 li.txt4 否
                 li.txt5 2017-10-31 23:12:00
-                li.txt6 配置  订阅警报
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
             ul.text1
-                li.txt1 哈哈
+                li.txt0 哈哈
+                li.txt1 今天很高兴
                 li.txt2 这是一段描述
                 li.txt3 357万
                 li.txt4 否
                 li.txt5 2017-10-31 23:12:00
-                li.txt6 配置  订阅警报
+                li.txt6 
+                        button.btn.btn-default(type='button')    编辑
+                        &nbsp;&nbsp;&nbsp;
+                        button.btn.btn-danger(type='button') 删除
             
-
 
 
 

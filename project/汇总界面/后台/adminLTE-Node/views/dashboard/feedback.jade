@@ -4,6 +4,10 @@ extends ../../views/layout/base
 block content  
     section.content-header
         style.
+            .content-header{
+                height:700px;
+            }
+
             .border{
                 position:relative;
                 top:2rem;
@@ -14,7 +18,7 @@ block content
             }
             .right{
                 position: relative;
-                left:20%;
+                left:2%;
                 top: 3.5rem;
             }
             #title{
@@ -22,9 +26,14 @@ block content
                 padding: 0;
                 display: inline-block;
                 margin-left: 2rem;
+                font-size:2rem;
+            }
+            #title  ul{
+                border-radius:20%;
+
             }
             #status{
-                padding: 1rem 3rem 1rem 13.1rem;
+                padding: 1rem 8rem 1rem 8rem;
                 background-color: #fafafa;
                 margin: 0%;
                 float: left;
@@ -34,7 +43,7 @@ block content
             .li1{
                 background-color: #fafafa;
                 margin: 0%;
-                padding: 1rem 5rem;
+                padding: 1rem 7rem;
                 float: left;
                 border-bottom: solid 1px;
                 border-bottom-color: #e8e8e8;
@@ -48,24 +57,25 @@ block content
                 display: inline-block;
                 position: relative;
                 top: 2%;
+                font-size:1.8rem;
             }
             .txt1{
-                padding: 1rem 3.88rem 1rem 5.8rem;
+                padding: 1rem 7rem;
             }
             .txt2{
-                padding:  1.1rem 3rem 1.1rem 4.5rem;
+                padding:  1rem 6rem;
             }
             .txt3{
                 padding:  1rem 2rem 1rem 2rem;
             }
             .txt4{
-                padding:  1rem 3.5rem 1rem 3rem;
+                padding:  1rem 5rem 1rem 12rem;
             }
             .txt5{
-                padding:  1.1rem 3rem 1.1rem 4rem;
+                padding:  1.1rem 3rem 1.1rem 10rem;
             }
             .txt6{
-                padding:  1rem 1rem 1rem 5.3rem;
+                padding:  1rem 1rem 1rem 9rem;
                 color:#1890ff;
             }
 
@@ -79,14 +89,14 @@ block content
                 padding:  1rem 2rem 1rem 0.5rem;
             }
             .txt4-4{
-                padding: 1rem 2rem 1rem 2rem;
+                padding: 1rem 2rem 1rem 10rem;
                 display: inline-block;
             }
             .txt5-5{
-                padding: 1.1rem 3rem 1.1rem 5.5rem;
+                padding: 1.1rem 3rem 1.1rem 13rem;
             }
             .txt6-6{
-                padding: 1rem 1rem 1rem 5.5rem;
+                padding: 1rem 1rem 1rem 9rem;
                 color:#1890ff;
             }
         //标题  
@@ -100,6 +110,7 @@ block content
             ul#title
                 li.li1 用户
                 li.li1 时间
+                li.li1  问题
                 li#status 状态
                 li.li1 更新时间
                 li.li1 操作
@@ -109,39 +120,46 @@ block content
                 li.txt3 登录问题
                 li.txt4 未解决
                 li.txt5 2017-10-31
-                li.txt6 配置  订阅警报
+                li.txt6 
+                        button.btn.btn-primary(type='button') 编辑
             ul.text1
                 li.txt1 嘻嘻
                 li.txt2 2018-10-15
                 li.txt3-3 图片管理问题
                 li.txt4-4 已解决
                 li.txt5-5 2017-10-31
-                li.txt6-6 配置  订阅警报
+                li.txt6-6 
+                        button.btn.btn-primary(type='button') 编辑
             ul.text1
                 li.txt1 哈哈
                 li.txt2 2018-10-15
                 li.txt3 登录问题
                 li.txt4 未解决
                 li.txt5 2017-10-31
-                li.txt6 配置  订阅警报
+                li.txt6 
+                        button.btn.btn-primary(type='button') 编辑
             ul.text1
                 li.txt1 嘻嘻
                 li.txt2 2018-10-15
                 li.txt3-3 图片管理问题
                 li.txt4-4 已解决
                 li.txt5-5 2017-10-31
-                li.txt6-6 配置  订阅警报
+                li.txt6-6 
+                        button.btn.btn-primary(type='button') 编辑
             ul.text1
                 li.txt1 哈哈
                 li.txt2 2018-10-15
                 li.txt3 登录问题
                 li.txt4 未解决
                 li.txt5 2017-10-31
-                li.txt6 配置  订阅警报
+                li.txt6 
+                        button.btn.btn-primary(type='button') 编辑
             ul.text1
                 li.txt1 嘻嘻
                 li.txt2 2018-10-15
                 li.txt3-3 图片管理问题
                 li.txt4-4 已解决
                 li.txt5-5 2017-10-31
-                li.txt6-6 配置  订阅警报
+                li.txt6-6 
+                        button.btn.btn-primary(type='button') 编辑
+

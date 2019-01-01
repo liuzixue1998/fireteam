@@ -15,32 +15,11 @@ router.get("/", function (req, res) {
   }
 });
 
-router.get('/video', function(req, res,next) {
-	res.render('dashboard/video');
-})
+router.get('/users', function(req, res, next) {
+    res.render('dashboard/users');
+});
 
-router.get('/feedback', function(req, res,next) {
-	res.render('dashboard/feedback');
-})
 
-router.get('/history', function(req, res,next) {
-	res.render('dashboard/history');
-})
-
-router.get('/post', function(req, res,next) {
-	res.render('dashboard/post');
-})
-
-router.get('/users', function(req, res,next) {
-  res.render('dashboard/users');
-})
-
-router.get('/together', function(req, res,next) {
-  res.render('dashboard/together');
-})
-router.get('/home', function(req, res,next) {
-  res.render('dashboard/home');
-})
 
 /**
  * 首页
@@ -141,3 +120,4 @@ router.post('/modify', function (req, res) {
   })
 })
 module.exports = router;
+

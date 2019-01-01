@@ -9,6 +9,20 @@ const session = require("express-session");
 var index = require('./routes/index');
 var users = require('./routes/users');
 var config = require('./config/index');
+var video = require('./routes/video');
+var together = require('./routes/together');
+var post = require('./routes/post');
+var home = require('./routes/home');
+var history = require('./routes/history');
+var feedback = require('./routes/feedback');
+var divisi = require('./routes/divisi');
+var addpost = require('./routes/addpost');
+var admin = require('./routes/admin');
+var guanli1=require('./routes/guanli1');
+var input1=require('./routes/input1');
+var addco=require('./routes/addco');
+var guanli2=require('./routes/guanli2');
+
 
 var app = express();
 
@@ -35,7 +49,19 @@ app.use(session({
 
 app.use('/', index);
 app.use('/user', users);
-
+app.use('/admin',admin);
+app.use('/addpost',addpost);
+app.use('/divisi',divisi);
+app.use('/feedback',feedback);
+app.use('/history',history);
+app.use('/home',home);
+app.use('/post',post);
+app.use('/together',together);
+app.use('/video',video);
+app.use('/guanli1',guanli1);
+app.use('/input1',input1);
+app.use('/addco',addco);
+app.use('/guanli2',guanli2);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

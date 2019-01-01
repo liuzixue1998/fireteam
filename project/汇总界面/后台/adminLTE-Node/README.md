@@ -1,8 +1,7 @@
 # adminLTE-Node
 Templating Admin LTE with NodeJS
-nodejs+express+mysql(adminLTE模板)
 
-# npm install 
 
-# npm start 
+# npm install on your terminal
 
+# npm start on your terminal
